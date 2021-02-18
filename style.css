@@ -1,3 +1,62 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
+
+img {
+    max-width: 100%;
+}
+
+header {}
+
+nav {}
+
+.burger {}
+
+h1 {}
+
+.splash {}
+
+.logo {}
+
+.logo img {}
+
+main {}
+
+section {}
+
+#forside_planter {}
+
+h3 {}
+
+.plante_01 {}
+
+.plante_02 {}
+
+.plante_03 {}
+
+.plante_04 {}
+
+.plante_05 {}
+
+.plante_06 {}
+
+.splash_02 {}
+
+.splash_02 img {}
+
+#galleri_insp {}
+
+.insp_01 {}
+
+.insp_02 {}
+
+.insp_03 {}
+
+.insp_04 {}
+
+.insp_05 {}
+
+.insp_06 {}
+
+footer {}

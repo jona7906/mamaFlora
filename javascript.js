@@ -19,5 +19,6 @@
 
                hentData();
 
+               function vis() {}
 
            })

@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er loaded
     {
 
-        const imgURL = "";
+        const imgURL = "https://plante-2af1.restdb.io/media/";
         const url = "https://plante-2af1.restdb.io/rest/planter/";
+
         const options = {
             headers: {
                 'x-apikey': "602e76225ad3610fb5bb6339"
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
             console.log("visPlanten");
             document.querySelector("p").innerHTML = plante.pleje;
             document.querySelector("p:nth-of-type(2n)").innerHTML = plante.Egenskaber;
+            document.querySelector(".img1").src = imgURL + plante.pic;
         }
 
     })

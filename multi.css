@@ -42,3 +42,18 @@ article h3 {}
 arcicle button {}
 
 footer {}
+
+@media (min-width: 800px) {
+    #multi_planter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    #multi_planter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }

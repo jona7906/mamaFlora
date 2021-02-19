@@ -9,7 +9,7 @@
                    }
                }
 
-
+               const imgURL = "https://plante-2af1.restdb.io/rest/planter/";
 
                async function hentData() {
                    const respons = await fetch(url, options);
@@ -23,12 +23,15 @@
                    console.log(json);
                    const template = document.querySelector("template");
 
+
                    json.forEach(planter => {
                        const klon = template.cloneNode(true).content;
 
                        klon.querySelector("#titelPlante").textContent = planter.navn;
 
                        planteSection = document.querySelector("#multi_planter");
+
+                       klon.querySelector("#imgPlante").src = imgURL + planter.pic[0];
 
                        planteSection.appendChild(klon);
                    })

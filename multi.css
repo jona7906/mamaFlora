@@ -7,6 +7,7 @@ img {
     max-width: 100%;
 }
 
+
 body {}
 
 header {}
@@ -27,9 +28,23 @@ h1 {}
 
 main {}
 
-.filter {}
+.filter {
+    width: 100%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-.filter button {}
+}
+
+.filter button {
+    border-radius: 100px 100px 100px 100px;
+    width: 150px;
+    height: 50px;
+    background-color: #95DB9C;
+
+
+}
 
 #multi_planter {}
 
@@ -46,6 +61,12 @@ article h3 {}
 arcicle button {}
 
 footer {}
+
+
+.valgt {
+    background-color: yellow;
+    color: aliceblue;
+}
 
 @media (min-width: 800px) {
     #multi_planter {

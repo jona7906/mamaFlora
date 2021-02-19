@@ -50,7 +50,7 @@ li a:nth-of-type(2) {
 
 }
 
-.burger:hover + nav li,
+.burger:onclick + nav li,
 nav li:hover {
     display: block;
     position: absolute;

@@ -31,11 +31,18 @@
 
                        planteSection = document.querySelector("#multi_planter");
 
+                       klon.querySelector("button.buttonPlante").addEventListener("click", visPlante);
+
                        klon.querySelector("#imgPlante").src = imgURL + planter.pic[0];
                        planteSection.appendChild(klon);
 
 
                    })
+
                }
 
+               function visPlante(planter) {
+                   /*window.location.href = `singleview.html`;*/
+                   location.href = `singleview.html?id=${planter._id}`;
+               }
            })

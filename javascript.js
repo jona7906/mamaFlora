@@ -19,6 +19,8 @@
 
                hentData();
 
-               function vis() {}
+               function vis(json) {
+                   console.log("json");
+               }
 
            })

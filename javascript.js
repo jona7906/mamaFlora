@@ -32,8 +32,9 @@
                        planteSection = document.querySelector("#multi_planter");
 
                        klon.querySelector("#imgPlante").src = imgURL + planter.pic[0];
-
                        planteSection.appendChild(klon);
+
+
                    })
                }
 

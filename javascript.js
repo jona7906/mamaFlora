@@ -20,7 +20,18 @@
                hentData();
 
                function vis(json) {
-                   console.log("json");
+                   console.log(json);
+                   const template = document.querySelector("template");
+
+                   json.forEach(planter => {
+                       const klon = template.cloneNode(true).content;
+
+                       klon.querySelector("#titelPlante").textContent = planter.navn;
+
+                       planteSection = document.querySelector("#multi_planter");
+
+                       planteSection.appendChild(klon);
+                   })
                }
 
            })

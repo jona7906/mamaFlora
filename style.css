@@ -274,7 +274,13 @@ h3 {}
 #forside_planter img {}
 
 
-.splash_02 {}
+.splash_02 {
+    background-image: url(img/splash_03.jpg);
+    width: 90%;
+    height: 30vw;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 .splash_02 img {}
 

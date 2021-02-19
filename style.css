@@ -191,21 +191,88 @@ main {
 
 section {}
 
-#forside_planter {}
+#forside_planter {
+    display: grid;
+    grid-gap: 30px;
+    padding-top: 50px;
+}
 
 h3 {}
 
-.plante_01 {}
+.plante_01 {
 
-.plante_02 {}
+    background-image: url(img/monstrea.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 10% 10%;
 
-.plante_03 {}
+}
 
-.plante_04 {}
+.plante_02 {
+    background-image: url(img/Strelitzia_Nicolai.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 70% 70%;
 
-.plante_05 {}
+}
 
-.plante_06 {}
+.plante_03 {
+    background-image: url(img/aloe_vera.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 100% 100%;
+}
+
+.plante_04 {
+    display: none;
+    background-image: url(img/monstrea.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 10% 10%;
+}
+
+.plante_05 {
+    display: none;
+    background-image: url(img/Strelitzia_Nicolai.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 70% 70%;
+}
+
+.plante_06 {
+    display: none;
+    background-image: url(img/aloe_vera.jpg);
+    background-size: cover;
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    background-position: 100% 100%;
+
+}
+
+#forside_planter h3 {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    width: 200px;
+    margin-top: 25vw;
+    padding: 25px;
+    color: white;
+    opacity: none;
+}
+
+#forside_planter img {}
+
 
 .splash_02 {}
 
@@ -232,18 +299,52 @@ footer {
 
 @media (min-width: 800px) {
 
-
-    .burger:hover + nav li,
-    nav li:hover {
-        display: block;
-        position: absolute;
-        width: 300px;
-        height: 200px;
+    #forside_planter {
+        grid-template-columns: 1fr 1fr;
     }
+
+    .plante_01,
+    .plante_02,
+    .plante_03,
+    .plante_04 {
+        width: 40vw;
+        height: 30vw;
+        display: block;
+    }
+
+    #forside_planter h3 {
+
+        margin-top: 12vw;
+
+    }
+
 
     .logo {
         width: 30vw;
     }
 }
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    #forside_planter {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .plante_01,
+    .plante_02,
+    .plante_03,
+    .plante_05,
+    .plante_06,
+    .plante_04 {
+        width: 25vw;
+        height: 20vw;
+        display: block;
+    }
+
+    #forside_planter h3 {
+
+        margin-top: 7.5vw;
+
+    }
+}

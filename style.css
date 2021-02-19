@@ -93,6 +93,20 @@ header {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+nav div:first-of-type {
+    border-bottom: 2px solid white;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav div:nth-of-type(2) {
+    border-top: 2px solid white;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*nav {}
 
 .burger {

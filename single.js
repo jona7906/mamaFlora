@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
     {
 
         const imgURL = "";
-        const url = "https://plante-2af1.restdb.io/rest/planter/";
+        const url = "https://plante-2af1.restdb.io/rest/planter";
         const options = {
             headers: {
                 'x-apikey': "602e76225ad3610fb5bb6339"

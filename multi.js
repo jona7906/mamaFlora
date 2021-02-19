@@ -45,7 +45,9 @@
 
                    planteSection = document.querySelector("#multi_planter");
 
-                   klon.querySelector("button.buttonPlante").addEventListener("click", visPlante);
+                   klon.querySelector("button.buttonPlante").addEventListener("click", () => {
+                       visPlante(planter);
+                   })
 
                    klon.querySelector("#imgPlante").src = imgURL + planter.pic[0];
 
@@ -62,9 +64,9 @@
 
            }
 
-           function visPlante(planter) {
+           function visPlante(hvad) {
                /*window.location.href = `singleview.html`;*/
-               location.href = `singleview.html?id=${planter._id}`;
+               location.href = `singleview.html?id=${hvad._id}`;
            }
 
        })

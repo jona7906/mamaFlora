@@ -9,7 +9,7 @@
                    }
                }
 
-               const imgURL = "https://plante-2af1.restdb.io/rest/planter/";
+               const imgURL = "https://plante-2af1.restdb.io/media/";
 
                async function hentData() {
                    const respons = await fetch(url, options);

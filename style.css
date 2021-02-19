@@ -66,6 +66,7 @@ header {
     padding: 4px;
     display: inline-block;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .bar1,

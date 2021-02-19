@@ -21,7 +21,16 @@ nav {
     background-color: green;
 }
 
-.burger {}
+.burger {
+    width: 50px;
+    height: 40px;
+    background-image: url(img/BURGER_01.svg);
+    background-size: cover;
+}
+
+.burger:hover {}
+
+.burger h1 {}
 
 h1 {}
 

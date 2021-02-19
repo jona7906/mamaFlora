@@ -41,7 +41,7 @@ main {}
     border-radius: 100px 100px 100px 100px;
     width: 150px;
     height: 50px;
-    background-color: #95DB9C;
+    /* background-color: #95DB9C;*/
 
 
 }
@@ -64,7 +64,7 @@ footer {}
 
 
 .valgt {
-    background-color: yellow;
+    background-color: #CA9C2C;
     color: aliceblue;
 }
 

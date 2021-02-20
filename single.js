@@ -30,7 +30,13 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
         function visPlanten() {
             console.log("visPlanten");
             document.querySelector("p").innerHTML = plante.pleje;
+
             document.querySelector("p:nth-of-type(2n)").innerHTML = plante.Egenskaber;
+
+            document.querySelector(".sol img").src = imgURL + plante.sol_ikon;
+
+            document.querySelector(".vand img").src = imgURL + plante.vand_ikon;
+
             document.querySelector(".img1").src = imgURL + plante.pic;
         }
 

@@ -1,7 +1,6 @@
 img {
     max-width: 100%;
-    width: 400px;
-    height: 500px;
+
 }
 
 header {}
@@ -21,9 +20,11 @@ body {
 
 
 main {
+    padding-top: 45px;
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .divider {
@@ -62,23 +63,20 @@ main {
 
 .sol img {
     max-width: 100%;
-    width: 400px;
-    height: 500px;
-    float: left;
+    width: 40vw;
 }
 
 .vand {}
 
 .vand img {
     max-width: 100%;
-    width: 400px;
-    height: 500px;
-    float: left;
+    width: 40vw;
+
 }
 
 article h2 {}
 
-artcile p {}
+article p {}
 
 footer {
     background-color: #4D7553;
@@ -88,6 +86,3 @@ footer {
 @media (min-width: 800px) {}
 
 @media (min-width: 1280px) {}
-
-
-footer {}

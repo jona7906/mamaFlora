@@ -18,6 +18,7 @@ body {
     padding: 5px;
 }
 
+.img1 {}
 
 main {
     padding-top: 45px;
@@ -61,18 +62,11 @@ main {
 
 .sol {}
 
-.sol img {
-    max-width: 100%;
-    width: 40vw;
-}
+.sol img {}
 
 .vand {}
 
-.vand img {
-    max-width: 100%;
-    width: 40vw;
-
-}
+.vand img {}
 
 article h2 {}
 
@@ -83,6 +77,19 @@ footer {
     height: 5vw;
 }
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+    .sol img {
+        max-width: 100%;
+        width: 40vw;
+    }
 
-@media (min-width: 1280px) {}
+    .img1 {
+        width: 50vw;
+    }
+
+    .vand img {
+        max-width: 100%;
+        width: 40vw;
+    }
+
+    @media (min-width: 1280px) {}

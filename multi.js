@@ -41,15 +41,21 @@
                json.forEach(planter => {
                    const klon = template.cloneNode(true).content;
 
-                   klon.querySelector("#titelPlante").textContent = planter.navn;
+                   klon.querySelector("article h3").textContent = planter.navn;
 
                    planteSection = document.querySelector("#multi_planter");
 
-                   klon.querySelector("button.buttonPlante").addEventListener("click", () => {
+                   klon.querySelector("article").addEventListener("mouseover", () => {
+                       console.log("hover på billedet" + this)
+
+                       this.HTMLImageElement.src = imgURL + planter.pic_hover[0];
+
+                   })
+                   klon.querySelector("article button").addEventListener("click", () => {
                        visPlante(planter);
                    })
 
-                   klon.querySelector("#imgPlante").src = imgURL + planter.pic[0];
+                   klon.querySelector("article img").src = imgURL + planter.pic[0];
 
                    if (filter == "navn") {
                        planteSection.appendChild(klon);

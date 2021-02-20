@@ -46,15 +46,36 @@ main {}
 
 }
 
-#multi_planter {}
+#multi_planter {
+    display: grid;
+    grid-gap: 20px;
+}
 
-article {}
+article {
+
+    width: 100%;
+
+}
 
 article img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    transition: transform .5s;
+    /*animation af zoom på hover*/
+
 }
+
+.article_billede {
+    overflow: hidden;
+    /*sørger for at billedet bliver i boks ved hover/zoom*/
+}
+
+article img:hover {
+    transform: scale(1.5);
+    /*zoom ved hover*/
+}
+
 
 article h3 {}
 
@@ -70,15 +91,15 @@ footer {}
 
 @media (min-width: 800px) {
     #multi_planter {
-        display: grid;
+
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
+
     }
 }
 
 @media (min-width: 1280px) {
 
     #multi_planter {
-        display: grid;
+
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

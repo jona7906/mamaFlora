@@ -45,12 +45,14 @@
 
                    planteSection = document.querySelector("#multi_planter");
 
-                   klon.querySelector("article").addEventListener("mouseover", () => {
-                       console.log("hover på billedet" + this)
+                   /*planteSection.innerHTML = "";*/
+              /*     klon.querySelector("article").addEventListener("mouseover", () => {
+         console.log("hover på billedet" + this)
 
-                       this.HTMLImageElement.src = imgURL + planter.pic_hover[0];
+         document.querySelector("article img").src = imgURL + planter.pic_hover[0];
 
-                   })
+     })*/
+
                    klon.querySelector("article button").addEventListener("click", () => {
                        visPlante(planter);
                    })

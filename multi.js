@@ -14,8 +14,10 @@
                const json = await respons.json();
                vis(json);
            }
+
            hentData();
 
+           let planteSection = document.querySelector("#multi_planter");
            let filter = "navn";
            const filterknapper = document.querySelectorAll(".filter button");
 
@@ -32,17 +34,13 @@
            function vis(json) {
                console.log(json);
                const template = document.querySelector("template");
-               let multiPlanter = document.querySelector("#multiPlanter");
-
-
-
-
+               planteSection.textContent = "";
                json.forEach(planter => {
                    const klon = template.cloneNode(true).content;
 
                    klon.querySelector("article h3").textContent = planter.navn;
 
-                   planteSection = document.querySelector("#multi_planter");
+
 
                    /*planteSection.innerHTML = "";*/
                    klon.querySelector("img").addEventListener("mouseover", skiftBilled);
@@ -63,13 +61,6 @@
 
                        this.src = imgURL + planter.pic;
                    }
-
-
-
-
-
-
-
 
                    klon.querySelector("article button").addEventListener("click", () => {
                        visPlante(planter);

@@ -71,10 +71,10 @@ article img {
     /*sørger for at billedet bliver i boks ved hover/zoom*/
 }
 
-article img:hover {
+/*article img:hover {
     transform: scale(1.5);
-    /*zoom ved hover*/
-}
+    zoom ved hover
+}*/
 
 
 article h3 {}

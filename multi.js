@@ -37,7 +37,6 @@
 
 
 
-
                json.forEach(planter => {
                    const klon = template.cloneNode(true).content;
 
@@ -46,12 +45,31 @@
                    planteSection = document.querySelector("#multi_planter");
 
                    /*planteSection.innerHTML = "";*/
-              /*     klon.querySelector("article").addEventListener("mouseover", () => {
-         console.log("hover på billedet" + this)
+                   klon.querySelector("img").addEventListener("mouseover", skiftBilled);
 
-         document.querySelector("article img").src = imgURL + planter.pic_hover[0];
+                   function skiftBilled() {
+                       console.log("hover på billedet " + this.outerHTML);
 
-     })*/
+                       this.src = imgURL + planter.pic_hover;
+
+
+
+                   }
+
+                   klon.querySelector("img").addEventListener("mouseout", skiftTilbage);
+
+                   function skiftTilbage() {
+                       console.log("hover på billedet " + this.outerHTML);
+
+                       this.src = imgURL + planter.pic;
+                   }
+
+
+
+
+
+
+
 
                    klon.querySelector("article button").addEventListener("click", () => {
                        visPlante(planter);

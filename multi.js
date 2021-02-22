@@ -98,21 +98,21 @@
                    }
                    // sol filtre
                    if (filter == "lidt_sol") {
-                       if (planter.sol <= 2) {
+                       if (planter.sol == 1) {
                            planteSection.appendChild(klon);
                            console.log(planter);
                        }
                    }
 
                    if (filter == "moderat_sol") {
-                       if (planter.sol > 2 && planter.sol <= 4) {
+                       if (planter.sol == 2) {
                            planteSection.appendChild(klon);
                            console.log(planter);
                        }
                    }
 
                    if (filter == "meget_sol") {
-                       if (planter.sol > 4) {
+                       if (planter.sol == 3) {
                            planteSection.appendChild(klon);
                            console.log(planter);
                        }

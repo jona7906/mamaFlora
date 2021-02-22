@@ -8,7 +8,7 @@ img {
 }
 
 body {
-    background-image: linear-gradient(#9bb3af, #49736b);
+    background-image: linear-gradient(#4D7553, #4B766D);
 }
 
 
@@ -18,7 +18,25 @@ header {
     width: 100%;
     height: 50px;
     background-color: #4D7553;
-    z-index: 1000;
+    z-index: 98;
+}
+
+.logo_navn_menu {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo_menu {
+    height: 46px;
+    margin-left: 1vw;
+    z-index: 99;
+}
+
+.mamaflora_menu {
+    color: #CA9C2C;
+    padding: 14px;
+    font-size: 19px;
+    z-index: 99;
 }
 
 #myLinks {
@@ -32,7 +50,6 @@ header {
 }
 
 #myLinks {
-    margin-top: 47px;
     position: absolute;
     width: 100%;
     height: 150px;
@@ -333,6 +350,32 @@ footer {
     .logo {
         width: 30vw;
     }
+
+    #burgercontainer {
+        display: none;
+    }
+
+    #myLinks {
+        display: flex;
+        background-color: transparent;
+        margin-top: 0;
+        height: auto;
+        justify-content: flex-end;
+        top: 0;
+    }
+
+    nav div:first-of-type {
+        display: none;
+    }
+
+    nav div:nth-of-type(2) {
+        display: none;
+    }
+
+    .active a:hover {
+        color: #CA9C2C;
+    }
+
 }
 
 @media (min-width: 1280px) {

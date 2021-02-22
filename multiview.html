@@ -40,9 +40,21 @@
     </div>
     <main>
         <div class="filter">
-            <button data-kategori="navn" class="valgt">Navn</button>
-            <button data-kategori="vand">Vand</button>
-            <button data-kategori="sol">Sol</button>
+            <button data-kategori="navn" class="valgt">Alle</button>
+
+            <div class="vand_filter">
+                <button data-kategori="vand">Vand</button>
+                <li><button data-kategori="lidt_vand">lidt</button>
+                    <button data-kategori="moderat_vand">Moderat</button>
+                    <button data-kategori="meget_vand">Meget</button>
+                </li>
+            </div>
+            <div class="sol_filter"><button data-kategori="sol">Sol</button>
+                <li><button data-kategori="lidt_sol">lidt</button>
+                    <button data-kategori="moderat_sol">Moderat</button>
+                    <button data-kategori="meget_sol">Meget</button>
+                </li>
+            </div>
         </div>
 
         <section id="multi_planter">
@@ -60,6 +72,4 @@
 
     <script src="javascript.js"></script>
     <script src="multi.js"></script>
-</body>
-
-</html>
+</body></html>

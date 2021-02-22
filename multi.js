@@ -68,15 +68,61 @@
 
                    klon.querySelector("article img").src = imgURL + planter.pic[0];
 
+                   // alle filter
+
                    if (filter == "navn") {
                        planteSection.appendChild(klon);
+
                    }
-                   if (filter == "vand") {
-                       planteSection.appendChild(klon);
+
+                   // vand filtre
+                   if (filter == "lidt_vand") {
+                       if (planter.vand == 1) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
                    }
-                   if (filter == "sol") {
-                       planteSection.appendChild(klon);
+
+                   if (filter == "moderat_vand") {
+                       if (planter.vand == 2) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
                    }
+
+                   if (filter == "meget_vand") {
+                       if (planter.vand == 3) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
+                   // sol filtre
+                   if (filter == "lidt_sol") {
+                       if (planter.sol <= 2) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
+
+                   if (filter == "moderat_sol") {
+                       if (planter.sol > 2 && planter.sol <= 4) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
+
+                   if (filter == "meget_sol") {
+                       if (planter.sol > 4) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
+
+
+
+
+
+
                })
 
            }

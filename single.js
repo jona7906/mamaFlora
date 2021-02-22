@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
 
         function visPlanten() {
             console.log("visPlanten");
-            document.querySelector("p").innerHTML = plante.pleje;
+            document.querySelector("#Pleje").innerHTML = plante.pleje;
 
             document.querySelector("p:nth-of-type(2n)").innerHTML = plante.Egenskaber;
 

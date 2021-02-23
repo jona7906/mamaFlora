@@ -257,6 +257,7 @@ p {
     color: white;
     font-size: 1rem;
     width: 100vw;
+    /*lyder voldsomt? hehe*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -264,7 +265,16 @@ p {
 }
 
 
-.plante_01 {
+#forside_planter div {
+    width: 75vw;
+    height: 60vw;
+    background-color: darkgreen;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+/*.plante_01 {
 
     background-image: url(img/monstrea.jpg);
     background-size: cover;
@@ -272,29 +282,24 @@ p {
     height: 60vw;
     margin: 0 auto;
     background-position: 10% 10%;
+    position: relative;
 
+}*/
+
+
+
+.plante_02 img {
+    margin-top: -30vw;
+    width: 120vw;
 }
 
-.plante_02 {
-    background-image: url(img/Strelitzia_Nicolai.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 70% 70%;
 
+.plante_03 img {
+    margin-top: -50vw;
+    width: 120vw;
 }
 
-.plante_03 {
-    background-image: url(img/aloe_vera.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 100% 100%;
-}
-
-.plante_04 {
+/*.plante_04 {
     display: none;
     background-image: url(img/monstrea.jpg);
     background-size: cover;
@@ -302,41 +307,48 @@ p {
     height: 60vw;
     margin: 0 auto;
     background-position: 10% 10%;
+}*/
+
+.plante_05 img {
+
+    margin-top: -40vw;
+    width: 120vw;
 }
 
-.plante_05 {
-    display: none;
-    background-image: url(img/Strelitzia_Nicolai.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 70% 70%;
-}
 
-.plante_06 {
-    display: none;
-    background-image: url(img/aloe_vera.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 100% 100%;
-
+.plante_06 img {
+    margin-top: -50vw;
+    width: 120vw;
 }
 
 #forside_planter h3 {
     margin: 0 auto;
+    margin-left: 13vw;
     text-align: center;
-    border: 2px solid white;
-    width: 200px;
-    margin-top: 25vw;
-    padding: 2vw;
+    /*position: relative;*/
+    width: 50vw;
+    font-size: 5vw;
+    border: white 2px solid;
+    padding: 4vw;
     color: white;
-    opacity: none;
+    opacity: 100%;
+    margin-top: 25vw;
+    position: absolute;
+    /*placere teksten oven på billedet*/
 }
 
-#forside_planter img {}
+
+
+#forside_planter img {
+    opacity: 20%;
+    max-width: 100%;
+}
+
+
+#forside_planter img:hover {
+    opacity: 100%;
+    max-width: 100%;
+}
 
 
 .splash_02 {
@@ -440,7 +452,7 @@ footer p {
 
     #forside_planter h3 {
         max-width: 100%;
-        margin-top: 12vw;
+        /*margin-top: 12vw;*/
 
     }
 

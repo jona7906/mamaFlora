@@ -253,7 +253,6 @@ p {
 
 #forside_planter h3 {
     margin: 0 auto;
-    margin-left: 6vw;
     text-align: center;
     /*position: relative;*/
     width: 30vw;
@@ -263,7 +262,6 @@ p {
     color: white;
     opacity: 100%;
     margin-top: 12vw;
-    position: absolute;
     /*placere teksten oven på billedet*/
 }
 
@@ -464,7 +462,6 @@ footer p {
     #forside_planter h3 {
         width: 30vw;
         font-size: 3vw;
-        margin-left: 9vw;
         margin-top: 15vw;
         /*margin-top: 12vw;*/
     }
@@ -634,12 +631,11 @@ footer p {
 
     #forside_planter h3 {
         width: 15vw;
-
         font-size: 1.5vw;
-        margin-left: 4.5vw;
         margin-top: 0vw;
         padding: 2vw;
         margin-top: 7vw;
+        text-align: center;
     }
 
 

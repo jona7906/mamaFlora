@@ -9,6 +9,12 @@
 }
 
 
+#guide img {
+    display: flex;
+    margin: auto;
+}
+
+
 @media (min-width: 800px) {
     #intro_guide {
         padding-top: 10vw;

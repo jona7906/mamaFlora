@@ -19,6 +19,7 @@ header {
     height: 50px;
     background-color: #4D7553;
     z-index: 98;
+    font-family: Philosopher, sans-serif;
 }
 
 .logo_navn_menu {
@@ -35,8 +36,12 @@ header {
 .mamaflora_menu {
     color: #CA9C2C;
     padding: 14px;
+    top: 0;
     font-size: 19px;
-    z-index: 99;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
 }
 
 #myLinks {
@@ -357,8 +362,8 @@ p {
 .insp_06 {}
 
 footer {
-    background-color: #4D7553;
-    height: 5vw;
+    height: auto;
+    padding: 1vw;
 }
 
 footer p {
@@ -469,7 +474,6 @@ footer p {
     #om_os_section {
         padding: 5vw;
         padding-top: 55px;
-
         align-items: center;
     }
 

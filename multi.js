@@ -19,7 +19,7 @@
 
    		let planteSection = document.querySelector("#multi_planter");
    		let filter = "navn";
-   		const filterknapper = document.querySelectorAll(".filter button");
+   		const filterknapper = document.querySelectorAll(".filter .sorter");
 
    		filterknapper.forEach(knap => knap.addEventListener("click", sorter))
 

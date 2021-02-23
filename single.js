@@ -38,6 +38,31 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
             document.querySelector(".vand img").src = imgURL + plante.vand_ikon;
 
             document.querySelector(".img1").src = imgURL + plante.pic;
+            document.querySelector(".img2").src = imgURL + plante.pic_hover;
         }
 
     })
+
+let slideNummer = 1;
+
+visSlides(slideNummer);
+
+function plusSlides(n) {
+    visSlides(slideNummer += n);
+}
+
+function visSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("billede_slideshow");
+    if (n > slides.length) {
+        slideNummer = 1
+    }
+    if (n < 1) {
+        slideNummer = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideNummer - 1].style.display = "block";
+}

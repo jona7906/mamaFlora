@@ -64,28 +64,30 @@ p {
 
 .logo img {}
 
-main {}
+main {
+	margin: 5vw;
+}
 
 .filter {
 	width: 100%;
-	padding: 20px;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-
+	padding: 10px;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+	grid-gap: 1.5vw;
+	margin-bottom: 2vw;
 }
 
 .filter button {
 	border-radius: 25px;
 	padding: 10px;
-	width: 100px;
+	width: 180px;
 	font-family: Quattrocento, sans-serif;
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	font-weight: bold;
 	color: #EAEBE6;
 	background-color: #567356;
 	border: none;
-	margin: 1vw;
 }
 
 .filter button:active {
@@ -187,7 +189,7 @@ footer {}
 
 .valgt {
 	background-color: #CA9C2C;
-	color: aliceblue;
+	color: #EAEBE6;
 }
 
 /*Gældende for tablet*/
@@ -195,11 +197,20 @@ footer {}
 
 	main {
 		margin: 5vw;
+		align-content: center;
 	}
 
 	#multi_planter {
 
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.filter {
+		grid-gap: 1.5vw;
+	}
+
+	.filter button {
+		font-size: 0.9rem;
 
 	}
 
@@ -228,3 +239,8 @@ footer {}
 
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
+
+	.filter button:hover {
+		background-color: #9FB2AF;
+	}
+}

@@ -2,6 +2,12 @@
     padding-top: 20vw;
 }
 
+#guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
 #guide img {}
 
 
@@ -10,10 +16,7 @@
         padding-top: 10vw;
     }
 
-    #guide {
-        display: flex;
-        width: 50vw;
-    }
+    #guide {}
 
 
 }

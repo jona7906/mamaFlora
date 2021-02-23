@@ -59,7 +59,7 @@ header {
 #myLinks {
     position: absolute;
     width: 100vw;
-    height: 150px;
+    height: 200px;
     background-color: #9AB3AF;
 }
 
@@ -128,6 +128,13 @@ nav div:first-of-type {
 }
 
 nav div:nth-of-type(2) {
+    border-top: 2px solid white;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav div:nth-of-type(3) {
     border-top: 2px solid white;
     display: block;
     width: 80%;
@@ -506,6 +513,10 @@ footer p {
     }
 
     nav div:nth-of-type(2) {
+        display: none;
+    }
+
+    nav div:nth-of-type(3) {
         display: none;
     }
 

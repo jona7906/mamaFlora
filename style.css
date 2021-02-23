@@ -35,6 +35,7 @@ header {
 }
 
 .mamaflora_menu {
+    font-family: Philosopher, sans-serif;
     color: #CA9C2C;
     padding: 14px;
     top: 0;
@@ -161,7 +162,7 @@ main {
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
 }
 
 section {}

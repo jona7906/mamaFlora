@@ -8,15 +8,26 @@
     grid-gap: 10px;
 }
 
-#guide img {}
-
 
 @media (min-width: 800px) {
     #intro_guide {
         padding-top: 10vw;
     }
 
-    #guide {}
+    .ikon {
+        display: flex;
+        align-items: center;
+        padding: 1vw 3vw 1vw 3vw;
+    }
+
+    .ikon p {
+        text-align: left;
+    }
+
+    #guide img {
+        width: 16vw;
+        height: 100%;
+    }
 
 
 }

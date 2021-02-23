@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
         function visBilleder() {
             console.log("visBilleder");
 
-            document.querySelector(".sol_guide img").src = imgURL + plante.sol_ikon[0];
+            document.querySelector(".sol_guide img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d05";
             document.querySelector(".sol_guide img:nth-of-type(2n)").src = imgURL + plante.sol_ikon[1];
             document.querySelector(".sol_guide img:nth-of-type(3n)").src = imgURL + plante.sol_ikon[2];
             document.querySelector(".sol_guide img:nth-of-type(4n)").src = imgURL + plante.sol_ikon[3];

@@ -190,19 +190,21 @@ header h1 {
     padding-top: 45px;
     background-image: url(img/splash_01.jpg);
     background-size: cover;
-    background-position: 30% 30%;
-    height: 100%;
+    background-position: 30% 33%;
+    height: 38vw;
 }
+
+
 
 .logo {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    width: 40vw;
     margin: 0 auto;
-
+    display: flex;
+    justify-content: center;
 }
 
-.logo img {}
+.logo img {
+    width: 25vw;
+}
 
 
 
@@ -545,6 +547,14 @@ footer p {
     .logo {
         width: 30vw;
     }
+
+    .splash {
+    height: 25vw;
+}
+
+    .logo img {
+    width: 20vw;
+}
 
     #burgercontainer {
         display: none;

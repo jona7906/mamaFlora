@@ -18,6 +18,10 @@ nav {}
 
 .burger a {}
 
+button{
+    cursor: pointer;
+}
+
 h1 {
 	font-family: Philosopher, sans-serif;
 	color: white;
@@ -92,7 +96,6 @@ main {
 	color: #EAEBE6;
 	background-color: #567356;
 	border: none;
-    cursor: pointer;
 }
 
 li{

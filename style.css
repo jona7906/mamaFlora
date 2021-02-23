@@ -133,57 +133,6 @@ nav div:nth-of-type(2) {
     margin: 0 auto;
 }
 
-/*nav {}
-
-.burger {
-    width: 50px;
-    height: 40px;
-    background-image: url(img/BURGER_01.svg);
-    background-size: cover;
-    margin-top: 5px;
-}
-
-nav li {
-    display: none;
-    padding-top: 5px;
-}
-
-li a {
-    width: 100%;
-    height: 50px;
-    background-color: #9AB3AF;
-    display: inline-block;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-li a:nth-of-type(2) {
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-
-}
-
-.burger:onclick + nav li,
-nav li:hover {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 200px;
-}
-
-li a:hover {
-    background-color: #CA9C2C;
-}
-
-header h1 {
-    float: left;
-    display: inline;
-    margin-left: 70px;
-    color: #CA9C2C;
-    margin-top: 5px;
-}*/
 
 
 .splash {
@@ -218,9 +167,11 @@ main {
 section {}
 
 #forside_planter {
+    margin: 10px;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
     padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
 }
 
 h1 {
@@ -268,8 +219,8 @@ p {
 
 
 #forside_planter div {
-    width: 75vw;
-    height: 60vw;
+    width: 100%;
+    height: 35vw;
     background-color: darkgreen;
     margin: 0 auto;
     overflow: hidden;
@@ -284,34 +235,34 @@ p {
 
 
 .plante_03 img {
-    margin-top: -50vw;
+    margin-top: -30vw;
     width: 120vw;
 }
 
 .plante_05 img {
 
-    margin-top: -40vw;
+    margin-top: -20vw;
     width: 120vw;
 }
 
 
 .plante_06 img {
-    margin-top: -50vw;
+    margin-top: -30vw;
     width: 120vw;
 }
 
 #forside_planter h3 {
     margin: 0 auto;
-    margin-left: 13vw;
+    margin-left: 6vw;
     text-align: center;
     /*position: relative;*/
-    width: 50vw;
-    font-size: 5vw;
+    width: 30vw;
+    font-size: 3vw;
     border: white 2px solid;
     padding: 4vw;
     color: white;
     opacity: 100%;
-    margin-top: 25vw;
+    margin-top: 12vw;
     position: absolute;
     /*placere teksten oven på billedet*/
 }
@@ -497,9 +448,11 @@ footer p {
 @media (min-width: 800px) {
 
     #forside_planter {
-        grid-template-columns: 1fr 1fr;
+
         max-width: 100%;
         margin: 0 auto;
+        grid-gap: 2vw;
+        margin: 20px;
     }
 
 
@@ -550,12 +503,12 @@ footer p {
     }
 
     .splash {
-    height: 25vw;
-}
+        height: 25vw;
+    }
 
     .logo img {
-    width: 20vw;
-}
+        width: 20vw;
+    }
 
     #burgercontainer {
         display: none;
@@ -669,7 +622,7 @@ footer p {
 
 @media (min-width: 1280px) {
     #forside_planter {
-
+        grid-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
 
     }
@@ -683,7 +636,7 @@ footer p {
         width: 15vw;
 
         font-size: 1.5vw;
-        margin-left: 5vw;
+        margin-left: 4.5vw;
         margin-top: 0vw;
         padding: 2vw;
         margin-top: 7vw;

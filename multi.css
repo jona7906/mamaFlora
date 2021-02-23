@@ -92,6 +92,11 @@ main {
 	color: #EAEBE6;
 	background-color: #567356;
 	border: none;
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
 }
 
 .filter button:active {

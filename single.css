@@ -1,7 +1,6 @@
 img {
     max-width: 100%;
     height: auto;
-    padding: 1vw;
 }
 
 header {
@@ -153,6 +152,22 @@ article p {}
     /*    color: ;*/
     /*    font-weight: bold;*/
     /*    font-size: ;*/
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #85A69B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.valgt_dot,
+.dot:hover {
+    background-color: #4C6E72;
 }
 
 @media (min-width: 600px) {

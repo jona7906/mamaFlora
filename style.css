@@ -274,19 +274,6 @@ p {
 
 }
 
-/*.plante_01 {
-
-    background-image: url(img/monstrea.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 10% 10%;
-    position: relative;
-
-}*/
-
-
 
 .plante_02 img {
     margin-top: -30vw;
@@ -298,16 +285,6 @@ p {
     margin-top: -50vw;
     width: 120vw;
 }
-
-/*.plante_04 {
-    display: none;
-    background-image: url(img/monstrea.jpg);
-    background-size: cover;
-    width: 75vw;
-    height: 60vw;
-    margin: 0 auto;
-    background-position: 10% 10%;
-}*/
 
 .plante_05 img {
 
@@ -345,10 +322,11 @@ p {
 }
 
 
-#forside_planter img:hover {
+#forside_planter div:hover img {
     opacity: 100%;
     max-width: 100%;
 }
+
 
 
 .splash_02 {
@@ -363,7 +341,7 @@ p {
 
 #galleri_insp {}
 
-.inspiration_tekst{
+.inspiration_tekst {
     margin-top: 5vw;
 }
 
@@ -518,23 +496,46 @@ footer p {
 
     #forside_planter {
         grid-template-columns: 1fr 1fr;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
-    .plante_01,
-    .plante_02,
-    .plante_03,
-    .plante_04 {
+
+    #forside_planter div {
         width: 100%;
-        height: 300px;
-        display: block;
+        height: 40vw;
     }
 
     #forside_planter h3 {
-        max-width: 100%;
+        width: 30vw;
+        font-size: 3vw;
+        margin-left: 9vw;
+        margin-top: 15vw;
         /*margin-top: 12vw;*/
+    }
 
+
+
+    .plante_03 img {
+        margin-top: -30vw;
+        width: 100vw;
+    }
+
+
+    .plante_04 img {
+        /* transform: scaleX(-1);*/
+    }
+
+    .plante_05 img {
+        margin-top: -20vw;
+        width: 120vw;
+    }
+
+
+    .plante_06 img {
+        margin-top: -30vw;
+        width: 120vw;
+        /*transform: scaleX(-1);*/
     }
 
     p {
@@ -587,7 +588,7 @@ footer p {
         max-width: 50vw;
     }
 
-    .inspiration_tekst h3{
+    .inspiration_tekst h3 {
         font-size: 2vw;
     }
 
@@ -600,58 +601,58 @@ footer p {
     }
 
     .insp_01 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-.insp_02 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_02 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-.insp_03 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_03 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-.insp_04 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_04 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-.insp_05 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_05 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-.insp_06 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_06 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
     .insp_07 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-        .insp_08 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_08 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
-            .insp_09 {
-    width: 19vw;
-    height: 19vw;
-    margin-top: 1vw;
-}
+    .insp_09 {
+        width: 19vw;
+        height: 19vw;
+        margin-top: 1vw;
+    }
 
 
 }
@@ -663,20 +664,47 @@ footer p {
 
     }
 
-    .plante_01,
-    .plante_02,
-    .plante_03,
-    .plante_05,
-    .plante_06,
-    .plante_04 {
+    #forside_planter div {
         width: 100%;
-        height: 300px;
-        display: block;
+        height: 20vw;
     }
 
     #forside_planter h3 {
+        width: 15vw;
 
-        margin-top: 7.5vw;
-
+        font-size: 1.5vw;
+        margin-left: 5vw;
+        margin-top: 0vw;
+        padding: 2vw;
+        margin-top: 7vw;
     }
+
+
+    .plante_02 img {
+        margin-top: -10vw;
+    }
+
+    .plante_03 img {
+        margin-top: -15vw;
+        width: 100vw;
+    }
+
+
+    .plante_04 img {
+        /*transform: scaleX(-1);*/
+    }
+
+    .plante_05 img {
+        margin-top: -10vw;
+        width: 120vw;
+        /* transform: scaleX(-1);*/
+    }
+
+
+    .plante_06 img {
+        margin-top: -15vw;
+        width: 120vw;
+        /*transform: scaleX(-1);*/
+    }
+
 }

@@ -65,7 +65,11 @@ p {
 .logo img {}
 
 main {
-	margin: 5vw;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
 }
 
 .filter {
@@ -196,8 +200,8 @@ footer {}
 @media (min-width: 768px) {
 
 	main {
-		margin: 5vw;
-		align-content: center;
+    margin: 0 auto;
+
 	}
 
 	#multi_planter {

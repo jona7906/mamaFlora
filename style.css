@@ -224,6 +224,7 @@ h1 {
     text-align: center;
     padding-bottom: 20px;
 }
+
 h2 {
     font-family: Philosopher, sans-serif;
     color: #CA9C2C;
@@ -234,6 +235,7 @@ h2 {
     padding-bottom: 20px;
     padding-top: 16px;
 }
+
 h3 {
     font-family: Philosopher, sans-serif;
     color: white;
@@ -243,6 +245,7 @@ h3 {
     text-align: center;
     padding-bottom: 20px;
 }
+
 p {
     font-family: Quattrocento, sans-serif;
     color: white;
@@ -466,13 +469,16 @@ footer p {
     #om_os_section {
         padding: 5vw;
         padding-top: 55px;
-        display: grid;
-        grid-template-columns: 2fr 3fr;
+
         align-items: center;
     }
 
-    #om_os_info {
-        padding: 5vw 10vw 0 5vw;
+    #om_os_section img {
+        width: 20vw;
+    }
+
+    #om_os_section p {
+        max-width: 50vw;
     }
 
 

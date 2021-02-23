@@ -351,17 +351,99 @@ p {
 
 #galleri_insp {}
 
-.insp_01 {}
+.inspiration_tekst{
+    margin-top: 5vw;
+}
 
-.insp_02 {}
+.insp_01 {
+    background-image: url(img/inspoplante1.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 5vw;
+}
 
-.insp_03 {}
+.insp_02 {
+    background-image: url(img/inspoplante2.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
 
-.insp_04 {}
+.insp_03 {
+    background-image: url(img/inspoplante3.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
 
-.insp_05 {}
+.insp_04 {
+    background-image: url(img/inspoplante4.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
 
-.insp_06 {}
+.insp_05 {
+    background-image: url(img/inspoplante5.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
+
+.insp_06 {
+    background-image: url(img/inspoplante6.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
+
+.insp_07 {
+    background-image: url(img/inspoplante7.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
+
+.insp_08 {
+    background-image: url(img/inspoplante8.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
+
+.insp_09 {
+    background-image: url(img/inspoplante9.jpg);
+    background-size: cover;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    background-position: 10% 60%;
+    margin-top: 8vw;
+}
 
 footer {
     background-color: #4D7553;
@@ -419,9 +501,8 @@ footer p {
 }
 
 
+
 @media (min-width: 800px) {
-
-
 
     #forside_planter {
         grid-template-columns: 1fr 1fr;
@@ -493,6 +574,72 @@ footer p {
     #om_os_section p {
         max-width: 50vw;
     }
+
+    .inspiration_tekst h3{
+        font-size: 2vw;
+    }
+
+    #galleri_insp {
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+
+    }
+
+    .insp_01 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+.insp_02 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+.insp_03 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+.insp_04 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+.insp_05 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+.insp_06 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+    .insp_07 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+        .insp_08 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
+
+            .insp_09 {
+    width: 19vw;
+    height: 19vw;
+    margin-top: 1vw;
+}
 
 
 }

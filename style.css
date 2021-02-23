@@ -228,28 +228,37 @@ p {
 
 }
 
+.plante_01 img {
+    margin-top: -30vw;
+
+}
 
 .plante_02 img {
-    margin-top: -30vw;
-    width: 120vw;
+    margin-top: -40vw;
+
 }
 
 
 .plante_03 img {
-    margin-top: -30vw;
-    width: 120vw;
+    margin-top: -50vw;
+
+}
+
+.plante_04 img {
+    margin-top: -40vw;
+
 }
 
 .plante_05 img {
 
-    margin-top: -20vw;
-    width: 120vw;
+    margin-top: -40vw;
+
 }
 
 
 .plante_06 img {
-    margin-top: -30vw;
-    width: 120vw;
+    margin-top: -50vw;
+
 }
 
 #forside_planter h3 {
@@ -272,13 +281,6 @@ p {
     opacity: 20%;
     max-width: 100%;
 }
-
-
-#forside_planter div:hover img {
-    opacity: 100%;
-    max-width: 100%;
-}
-
 
 
 .splash_02 {
@@ -469,28 +471,6 @@ footer p {
 
 
 
-    .plante_03 img {
-        margin-top: -30vw;
-        width: 100vw;
-    }
-
-
-    .plante_04 img {
-        /* transform: scaleX(-1);*/
-    }
-
-    .plante_05 img {
-        margin-top: -20vw;
-        width: 120vw;
-    }
-
-
-    .plante_06 img {
-        margin-top: -30vw;
-        width: 120vw;
-        /*transform: scaleX(-1);*/
-    }
-
     p {
         width: 1100px;
     }
@@ -637,34 +617,44 @@ footer p {
         padding: 2vw;
         margin-top: 7vw;
         text-align: center;
+
     }
 
+    #forside_planter div:hover img {
+        opacity: 100%;
+        max-width: 100%;
+    }
+
+    .plante_01 img {
+        margin-top: -20vw;
+    }
 
     .plante_02 img {
-        margin-top: -10vw;
+        margin-top: -40vw;
+        height: 800px;
     }
 
     .plante_03 img {
-        margin-top: -15vw;
+        margin-top: -35vw;
         width: 100vw;
+        height: 800px;
     }
 
 
     .plante_04 img {
-        /*transform: scaleX(-1);*/
+        margin-top: -20vw;
     }
 
     .plante_05 img {
-        margin-top: -10vw;
-        width: 120vw;
-        /* transform: scaleX(-1);*/
+        margin-top: -40vw;
+        height: 800px;
     }
 
 
     .plante_06 img {
-        margin-top: -15vw;
-        width: 120vw;
-        /*transform: scaleX(-1);*/
+        margin-top: -35vw;
+        width: 100vw;
+        height: 800px;
     }
 
 }

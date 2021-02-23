@@ -370,6 +370,8 @@ footer {
 footer p {
     font-style: normal;
     font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
 }
 
 /*OM OS SIDE*/

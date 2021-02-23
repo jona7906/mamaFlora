@@ -48,9 +48,17 @@
     <main>
         <article>
             <div class="row">
-                <div class="column">
-                    <img class="img1" src="" alt="">
+                <div class="column" id="slideshow">
+                    <div class="billede_slideshow">
+                        <img class="img1" src="" alt="">
+                    </div>
+                    <div class="billede_slideshow">
+                        <img class="img2" src="" alt="">
+                    </div>
+                    <button class="tilbage" onclick="plusSlides(-1)">❮</button>
+                    <button class="frem" onclick="plusSlides(1)">❯</button>
                 </div>
+
                 <div class="column">
                     <div class="sol">
                         <img src="" alt="">
@@ -78,4 +86,6 @@
     </footer>
     <script src="javascript.js"></script>
     <script src="single.js"></script>
-</body></html>
+</body>
+
+</html>

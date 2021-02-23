@@ -140,6 +140,31 @@ article h2 {}
 article p {}
 
 
+/*    SLIDESHOW   */
+
+.billede_slideshow img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
+}
+
+.frem,
+.tilbage {
+    /*    color: ;*/
+    /*    font-weight: bold;*/
+    /*    font-size: ;*/
+}
+
+@media (min-width: 600px) {
+
+    .billede_slideshow img {
+        display: flex;
+        margin: auto;
+        height: 60vh;
+        width: 70vw;
+    }
+
+}
 
 @media (min-width: 800px) {
 
@@ -178,28 +203,42 @@ article p {}
         height: 1px;
     }
 
-    @media (min-width: 1280px) {
-        .sol img {
-            max-width: 100%;
-            width: 20vw;
-            height: auto;
-        }
-
-        .img1 {
-            width: 50vw;
-            height: auto;
-        }
-
-        .vand img {
-            max-width: 100%;
-            width: 19.5vw;
-            height: auto;
-        }
-
-        p {
-            font-size: 1.3rem;
-            width: 80vw;
-            padding-left: 10vw;
-            padding-right: 10vw;
-        }
+    .billede_slideshow img {
+        height: 55vh;
+        width: 30vw;
     }
+}
+
+
+@media (min-width: 1280px) {
+    .sol img {
+        max-width: 100%;
+        width: 20vw;
+        height: auto;
+    }
+
+    .img1 {
+        width: 50vw;
+        height: auto;
+    }
+
+    .vand img {
+        max-width: 100%;
+        width: 19.5vw;
+        height: auto;
+    }
+
+    p {
+        font-size: 1.3rem;
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+
+    .billede_slideshow img {
+        height: 55vh;
+        width: 30vw;
+    }
+
+}

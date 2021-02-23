@@ -118,6 +118,44 @@
    					}
    				}
 
+   				// spiselig
+   				if (filter == "spiselig") {
+
+   					if (planter.spiselig == "ja") {
+   						planteSection.appendChild(klon);
+   					}
+   				}
+
+   				// blomstrende
+   				if (filter == "blomster") {
+
+   					if (planter.blomster == "ja") {
+   						planteSection.appendChild(klon);
+   					}
+   				}
+
+   				// om den hænger
+   				if (filter == "form") {
+
+   					if (planter.form == "ned") {
+   						planteSection.appendChild(klon);
+   					}
+   				}
+
+   				// Luftrenseende
+   				if (filter == "luftrensende") {
+
+   					if (planter.luftrensende == "ja") {
+   						planteSection.appendChild(klon);
+   					}
+   				}
+   				// sværhedsgraden er nem
+   				if (filter == "grad") {
+
+   					if (planter.grad == "nem") {
+   						planteSection.appendChild(klon);
+   					}
+   				}
 
    			})
 

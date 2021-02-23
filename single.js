@@ -44,16 +44,21 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
     })
 
 let slideNummer = 1;
-
 visSlides(slideNummer);
 
 function plusSlides(n) {
     visSlides(slideNummer += n);
 }
 
+function currentSlide(n) {
+    showSlides(slideNummer = n);
+}
+
 function visSlides(n) {
     let i;
     let slides = document.getElementsByClassName("billede_slideshow");
+    let dots = document.getElementsByClassName("dot");
+
     if (n > slides.length) {
         slideNummer = 1
     }
@@ -63,6 +68,10 @@ function visSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" valgt_dot", "");
+    }
 
     slides[slideNummer - 1].style.display = "block";
+    dots[slideNummer - 1].className += " valgt_dot";
 }

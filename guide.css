@@ -1,0 +1,21 @@
+#intro_guide {
+    padding-top: 20vw;
+}
+
+#guide img {}
+
+
+@media (min-width: 800px) {
+    #intro_guide {
+        padding-top: 10vw;
+    }
+
+    #guide {
+        display: flex;
+        width: 50vw;
+    }
+
+
+}
+
+@media (min-width: 1280px) {}

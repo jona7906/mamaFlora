@@ -20,6 +20,7 @@
            let planteSection = document.querySelector("#multi_planter");
            let filter = "navn";
            const filterknapper = document.querySelectorAll(".filter .sorter");
+           const overskriften = document.querySelector(".overskrift_filter");
 
            filterknapper.forEach(knap => knap.addEventListener("click", sorter))
 
@@ -30,6 +31,8 @@
                document.querySelector(".valgt").classList.remove("valgt");
                this.classList.add("valgt");
                hentData();
+
+               overskriften.textContent = this.textContent;
            }
 
            function vis(json) {

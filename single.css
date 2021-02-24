@@ -209,6 +209,30 @@ article p {}
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+
+}
+a h2{
+border-radius: 25px;
+    width: 150px;
+    font-family: Quattrocento, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #EAEBE6;
+    background-color: #567356;
+    border: none;
+    cursor: pointer;
+    }
+
+a h2:hover{
+
+    color: #EAEBE6;
+}
+
+#Egenskaber{
+    margin-bottom: 15vw;
+}
 
 @media (min-width: 600px) {
 
@@ -268,6 +292,10 @@ article p {}
 }
     main {
     padding-top: 5vw;
+}
+
+    #Egenskaber{
+    margin: 0;
 }
 
 }

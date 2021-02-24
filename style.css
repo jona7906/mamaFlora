@@ -397,14 +397,16 @@ a:first-of-type {
 footer {
     background-color: #4D7553;
     height: auto;
-    padding: 1vw;
+    padding: 10px;
 }
 
 footer p {
     font-style: normal;
     font-size: 0.8rem;
     width: 100%;
-    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    text-align: left;
 }
 
 /*OM OS SIDE*/
@@ -449,7 +451,7 @@ footer p {
         0 0 0 4px white;
 }
 
-.redtekst{
+.redtekst {
     color: red;
     background-color: aqua;
 }
@@ -458,7 +460,6 @@ footer p {
 @media (min-width: 800px) {
 
     #forside_planter {
-
         max-width: 100%;
         margin: 0 auto;
         grid-gap: 2vw;
@@ -476,6 +477,7 @@ footer p {
         font-size: 3vw;
         margin-top: 15vw;
         /*margin-top: 12vw;*/
+        z-index: 95;
     }
 
 

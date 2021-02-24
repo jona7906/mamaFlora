@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
 
         function visPlanten() {
             console.log("visPlanten");
-            document.querySelector("#Pleje").innerHTML = plante.pleje;
+            document.querySelector("#pleje").innerHTML = plante.pleje;
 
-            document.querySelector("p:nth-of-type(2n)").innerHTML = plante.Egenskaber;
+            document.querySelector("#egenskaber").innerHTML = plante.Egenskaber;
 
             document.querySelector(".sol img").src = imgURL + plante.sol_ikon;
 
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
             document.querySelector(".tilbageknap").addEventListener("click", tilbageTilMenu);
         }
 
-    function tilbageTilMenu() {
-        console.log("tilbageTilMenu")
+        function tilbageTilMenu() {
+            console.log("tilbageTilMenu")
             history.back();
         }
 

@@ -1,169 +1,169 @@
    document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er loaded
-   	{
-   		const url = "https://plante-2af1.restdb.io/rest/planter";
-   		const options = {
-   			headers: {
-   				'x-apikey': "602e76225ad3610fb5bb6339"
-   			}
-   		}
+       {
+           const url = "https://plante-2af1.restdb.io/rest/planter";
+           const options = {
+               headers: {
+                   'x-apikey': "602e76225ad3610fb5bb6339"
+               }
+           }
 
-   		const imgURL = "https://plante-2af1.restdb.io/media/";
+           const imgURL = "https://plante-2af1.restdb.io/media/";
 
-   		async function hentData() {
-   			const respons = await fetch(url, options);
-   			const json = await respons.json();
-   			vis(json);
-   		}
+           async function hentData() {
+               const respons = await fetch(url, options);
+               const json = await respons.json();
+               vis(json);
+           }
 
-   		hentData();
+           hentData();
 
-   		let planteSection = document.querySelector("#multi_planter");
-   		let filter = "navn";
-   		const filterknapper = document.querySelectorAll(".filter .sorter");
+           let planteSection = document.querySelector("#multi_planter");
+           let filter = "navn";
+           const filterknapper = document.querySelectorAll(".filter .sorter");
 
-   		filterknapper.forEach(knap => knap.addEventListener("click", sorter))
+           filterknapper.forEach(knap => knap.addEventListener("click", sorter))
 
-   		function sorter() {
-   			console.log("sortering");
-   			filter = this.dataset.kategori;
-   			document.querySelector(".valgt").classList.remove("valgt");
-   			this.classList.add("valgt");
-   			hentData();
-   		}
+           function sorter() {
+               console.log("sortering");
+               filter = this.dataset.kategori;
+               document.querySelector(".valgt").classList.remove("valgt");
+               this.classList.add("valgt");
+               hentData();
+           }
 
-   		function vis(json) {
-   			console.log(json);
-   			const template = document.querySelector("template");
-   			planteSection.textContent = "";
-   			json.forEach(planter => {
-   				const klon = template.cloneNode(true).content;
+           function vis(json) {
+               console.log(json);
+               const template = document.querySelector("template");
+               planteSection.textContent = "";
+               json.forEach(planter => {
+                   const klon = template.cloneNode(true).content;
 
-   				klon.querySelector("article h3").textContent = planter.navn;
-
-
-
-   				/*planteSection.innerHTML = "";*/
-   				klon.querySelector("img").addEventListener("mouseover", skiftBilled);
-
-   				function skiftBilled() {
-   					console.log("hover på billedet " + this.outerHTML);
-
-   					this.src = imgURL + planter.pic_hover;
+                   klon.querySelector("article h3").textContent = planter.navn;
 
 
 
-   				}
+                   /*planteSection.innerHTML = "";*/
+                   klon.querySelector("img").addEventListener("mouseover", skiftBilled);
 
-   				klon.querySelector("img").addEventListener("mouseout", skiftTilbage);
+                   function skiftBilled() {
+                       console.log("hover på billedet " + this.outerHTML);
 
-   				function skiftTilbage() {
-   					console.log("hover på billedet " + this.outerHTML);
+                       this.src = imgURL + planter.pic_hover;
 
-   					this.src = imgURL + planter.pic;
-   				}
 
-   				klon.querySelector("article button").addEventListener("click", () => {
-   					visPlante(planter);
-   				})
 
-   				klon.querySelector("article img").src = imgURL + planter.pic[0];
+                   }
 
-   				// alle filter
+                   klon.querySelector("img").addEventListener("mouseout", skiftTilbage);
 
-   				if (filter == "navn") {
-   					planteSection.appendChild(klon);
+                   function skiftTilbage() {
+                       console.log("hover på billedet " + this.outerHTML);
 
-   				}
+                       this.src = imgURL + planter.pic;
+                   }
 
-   				// vand filtre
-   				if (filter == "lidt_vand") {
-   					if (planter.vand == 1) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
+                   klon.querySelector("article button").addEventListener("click", () => {
+                       visPlante(planter);
+                   })
 
-   				if (filter == "moderat_vand") {
-   					if (planter.vand == 2) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
+                   klon.querySelector("article img").src = imgURL + planter.pic[0];
 
-   				if (filter == "meget_vand") {
-   					if (planter.vand == 3) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
-   				// sol filtre
-   				if (filter == "lidt_sol") {
-   					if (planter.sol == 1) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
+                   // alle filter
 
-   				if (filter == "moderat_sol") {
-   					if (planter.sol == 2) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
+                   if (filter == "navn") {
+                       planteSection.appendChild(klon);
 
-   				if (filter == "meget_sol") {
-   					if (planter.sol == 3) {
-   						planteSection.appendChild(klon);
-   						console.log(planter);
-   					}
-   				}
+                   }
 
-   				// spiselig
-   				if (filter == "spiselig") {
+                   // vand filtre
+                   if (filter == "lidt_vand") {
+                       if (planter.vand == 1) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
 
-   					if (planter.spiselig == "ja") {
-   						planteSection.appendChild(klon);
-   					}
-   				}
+                   if (filter == "moderat_vand") {
+                       if (planter.vand == 2) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
 
-   				// blomstrende
-   				if (filter == "blomster") {
+                   if (filter == "meget_vand") {
+                       if (planter.vand == 3) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
+                   // sol filtre
+                   if (filter == "lidt_sol") {
+                       if (planter.sol == 1) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
 
-   					if (planter.blomster == "ja") {
-   						planteSection.appendChild(klon);
-   					}
-   				}
+                   if (filter == "moderat_sol") {
+                       if (planter.sol == 2) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
 
-   				// om den hænger
-   				if (filter == "form") {
+                   if (filter == "meget_sol") {
+                       if (planter.sol == 3) {
+                           planteSection.appendChild(klon);
+                           console.log(planter);
+                       }
+                   }
 
-   					if (planter.form == "ned") {
-   						planteSection.appendChild(klon);
-   					}
-   				}
+                   // spiselig
+                   if (filter == "spiselig") {
 
-   				// Luftrenseende
-   				if (filter == "luftrensende") {
+                       if (planter.spiselig == "ja") {
+                           planteSection.appendChild(klon);
+                       }
+                   }
 
-   					if (planter.luftrensende == "ja") {
-   						planteSection.appendChild(klon);
-   					}
-   				}
-   				// sværhedsgraden er nem
-   				if (filter == "grad") {
+                   // blomstrende
+                   if (filter == "blomster") {
 
-   					if (planter.grad == "nem") {
-   						planteSection.appendChild(klon);
-   					}
-   				}
+                       if (planter.blomster == "ja") {
+                           planteSection.appendChild(klon);
+                       }
+                   }
 
-   			})
+                   // om den hænger
+                   if (filter == "form") {
 
-   		}
+                       if (planter.form == "ned") {
+                           planteSection.appendChild(klon);
+                       }
+                   }
 
-   		function visPlante(hvad) {
-   			/*window.location.href = `singleview.html`;*/
-   			location.href = `singleview.html?id=${hvad._id}`;
-   		}
+                   // Luftrenseende
+                   if (filter == "luftrensende") {
 
-   	})
+                       if (planter.luftrensende == "ja") {
+                           planteSection.appendChild(klon);
+                       }
+                   }
+                   // sværhedsgraden er nem
+                   if (filter == "grad") {
+
+                       if (planter.grad == "nem") {
+                           planteSection.appendChild(klon);
+                       }
+                   }
+
+               })
+
+           }
+
+           function visPlante(hvad) {
+               /*window.location.href = `singleview.html`;*/
+               location.href = `singleview.html?id=${hvad._id}`;
+           }
+
+       })

@@ -23,6 +23,7 @@
 
            filterknapper.forEach(knap => knap.addEventListener("click", sorter))
 
+
            function sorter() {
                console.log("sortering");
                filter = this.dataset.kategori;

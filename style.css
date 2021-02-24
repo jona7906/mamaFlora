@@ -235,13 +235,19 @@ p {
 
 }
 
+a:first-of-type {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
 .plante_01 img {
     margin-top: -30vw;
+
 
 }
 
 .plante_02 img {
-    margin-top: -40vw;
+    margin-top: -50vw;
 
 }
 
@@ -251,22 +257,6 @@ p {
 
 }
 
-.plante_04 img {
-    margin-top: -40vw;
-
-}
-
-.plante_05 img {
-
-    margin-top: -40vw;
-
-}
-
-
-.plante_06 img {
-    margin-top: -50vw;
-
-}
 
 #forside_planter h3 {
     margin: 0 auto;
@@ -277,9 +267,15 @@ p {
     border: white 2px solid;
     padding: 4vw;
     color: white;
-    opacity: 100%;
+    z-index: 1000;
+    position: relative;
     margin-top: 12vw;
+
     /*placere teksten oven på billedet*/
+}
+
+#forside_planter a {
+    text-decoration: none;
 }
 
 
@@ -291,11 +287,13 @@ p {
 
 
 .splash_02 {
-    background-image: url(img/splash_03.jpg);
-    width: 90%;
+    background-image: url(img/etbilled_02.jpg);
+    background-size: cover;
+    width: 100%;
     height: 30vw;
     margin: 0 auto;
     margin-top: 30px;
+    background-position: center
 }
 
 .splash_02 img {}
@@ -399,14 +397,16 @@ p {
 footer {
     background-color: #4D7553;
     height: auto;
-    padding: 1vw;
+    padding: 10px;
 }
 
 footer p {
     font-style: normal;
     font-size: 0.8rem;
     width: 100%;
-    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    text-align: left;
 }
 
 /*OM OS SIDE*/
@@ -451,7 +451,7 @@ footer p {
         0 0 0 4px white;
 }
 
-.redtekst{
+.redtekst {
     color: red;
     background-color: aqua;
 }
@@ -460,7 +460,6 @@ footer p {
 @media (min-width: 800px) {
 
     #forside_planter {
-
         max-width: 100%;
         margin: 0 auto;
         grid-gap: 2vw;
@@ -478,6 +477,7 @@ footer p {
         font-size: 3vw;
         margin-top: 15vw;
         /*margin-top: 12vw;*/
+        z-index: 95;
     }
 
 
@@ -637,8 +637,14 @@ footer p {
     }
 
     #forside_planter div:hover img {
+
         opacity: 100%;
         max-width: 100%;
+    }
+
+    a:first-of-type {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     .plante_01 img {
@@ -647,7 +653,8 @@ footer p {
 
     .plante_02 img {
         margin-top: -40vw;
-        height: 800px;
+        width: 100vw;
+        height: 50vw;
     }
 
     .plante_03 img {
@@ -657,20 +664,6 @@ footer p {
     }
 
 
-    .plante_04 img {
-        margin-top: -20vw;
-    }
 
-    .plante_05 img {
-        margin-top: -40vw;
-        height: 800px;
-    }
-
-
-    .plante_06 img {
-        margin-top: -35vw;
-        width: 100vw;
-        height: 800px;
-    }
 
 }

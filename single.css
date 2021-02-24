@@ -125,6 +125,7 @@ p {
     width: 100vw;
     text-align: left;
     padding: 0 3vw 0 3vw;
+    margin-bottom: 8vw;
 }
 
 
@@ -211,6 +212,8 @@ article p {}
     cursor: pointer;
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 a {
@@ -237,13 +240,13 @@ a h2:hover {
     color: #EAEBE6;
 }
 
-<<<<<<< HEAD
+
 #Egenskaber{
     margin-bottom: 10vw;
-=======
-#Egenskaber {
-    margin-bottom: 15vw;
->>>>>>> origin/master
+}
+
+.koebknap h2{
+    margin-bottom: 8vw;
 }
 
 @media (min-width: 600px) {
@@ -344,5 +347,9 @@ a h2:hover {
         height: 55vh;
         width: 30vw;
     }
+
+    .koebknap h2{
+    margin: auto;
+}
 
 }

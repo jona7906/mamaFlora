@@ -270,7 +270,7 @@ a:first-of-type {
     border: #EAEBE6 2px solid;
     padding: 4vw;
     color: #EAEBE6;
-    z-index: 1000;
+    z-index: 95;
     position: relative;
     margin-top: 12vw;
 
@@ -674,6 +674,12 @@ Hvad laver den her?
         font-size: 5rem;
         padding-top: 7vw;
         margin-left: 45vw;
+        /*        Ny styling for den store skærm*/
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 10vh;
+        left: 250px;
     }
 
 

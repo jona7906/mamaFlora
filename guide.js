@@ -27,19 +27,11 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
         function visBilleder() {
             console.log("visBilleder");
 
-            document.querySelector(".sol_guide img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d05";
-            document.querySelector(".sol_guide img:nth-of-type(2n)").src = imgURL + plante.sol_ikon[1];
-            document.querySelector(".sol_guide img:nth-of-type(3n)").src = imgURL + plante.sol_ikon[2];
-            document.querySelector(".sol_guide img:nth-of-type(4n)").src = imgURL + plante.sol_ikon[3];
-            document.querySelector(".sol_guide img:nth-of-type(5n)").src = imgURL + plante.sol_ikon[4];
-            document.querySelector(".sol_guide img:nth-of-type(6n)").src = imgURL + plante.sol_ikon[5];
+            document.querySelector(".ikon img").src = src = "https://plante-2af1.restdb.io/media/602e7152e1697e5a00016d03";
+            document.querySelector(".ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d04";
+            document.querySelector(".ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d05";
 
-            document.querySelector(".vand_guide img").src = imgURL + plante.vand_guide[0];
-            document.querySelector(".vand_guide img:nth-of-type(2n)").src = imgURL + plante.vand_guide[1];
-            document.querySelector(".vand_guide img:nth-of-type(3n)").src = imgURL + plante.vand_guide[2];
-            document.querySelector(".vand_guide img:nth-of-type(4n)").src = imgURL + plante.vand_guide[3];
-            document.querySelector(".vand_guide img:nth-of-type(5n)").src = imgURL + plante.vand_guide[4];
-            document.querySelector(".vand_guide img:nth-of-type(6n)").src = imgURL + plante.vand_guide[5];
-
+            document.querySelector(".vand_guide img").src = "https://plante-2af1.restdb.io/media/602e7155e1697e5a00016d09";
+            document.querySelector(".vand_guide .ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/602e7155e1697e5a00016d0a"
         }
     })

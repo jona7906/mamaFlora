@@ -42,6 +42,12 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
             // Indsætter billeder fra databasen til de t img-tags
             document.querySelector(".img1").src = imgURL + plante.pic;
             document.querySelector(".img2").src = imgURL + plante.pic_hover;
+            document.querySelector(".tilbageknap").addEventListener("click", tilbageTilMenu);
+        }
+
+    function tilbageTilMenu() {
+        console.log("tilbageTilMenu")
+            history.back();
         }
 
     })

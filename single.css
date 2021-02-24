@@ -1,147 +1,147 @@
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 header {
-	position: fixed;
-	display: block;
-	width: 100%;
-	height: 50px;
-	background-color: #4D7553;
-	z-index: 98;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #4D7553;
+    z-index: 98;
 }
 
 body {
-	background-image: linear-gradient(#85A69B, #4C6E72);
+    background-image: linear-gradient(#85A69B, #4C6E72);
 }
 
 .column {
-	flex: 33.33%;
-	padding: 5px;
+    flex: 33.33%;
+    padding: 5px;
 }
 
 .img1 {}
 
 #mamaflora_menu {
     font-family: Philosopher, sans-serif;
-	color: #CA9C2C;
-	padding: 14px;
-	top: 0;
-	font-size: 19px;
-	position: absolute;
-	justify-content: center;
-	display: flex;
-	width: 100vw;
+    color: #CA9C2C;
+    padding: 14px;
+    top: 0;
+    font-size: 19px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
 }
 
 main {
-	padding-top: 10vw;
-	position: relative;
-	max-width: 1280px;
-	margin: 0 auto;
-	padding-bottom: 100px;
+    padding-top: 15vw;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .divider {
-	position: relative;
-	margin: 10vw 0 10vw 0;
-	height: 1px;
+    position: relative;
+    margin: 10vw 0 10vw 0;
+    height: 1px;
 }
 
 .div-transparent:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
 }
 
 .div-dot:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -9px;
-	left: calc(50% - 9px);
-	width: 18px;
-	height: 18px;
-	background-color: goldenrod;
-	border: 1px solid rgb(48, 49, 51);
-	border-radius: 50%;
-	box-shadow: inset 0 0 0 2px white,
-		0 0 0 4px white;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: calc(50% - 9px);
+    width: 18px;
+    height: 18px;
+    background-color: goldenrod;
+    border: 1px solid rgb(48, 49, 51);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px white,
+        0 0 0 4px white;
 }
 
 h1 {
-	font-family: Philosopher, sans-serif;
-	color: white;
-	font-size: 2rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	padding-bottom: 0vw;
+    font-family: Philosopher, sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-bottom: 0vw;
 }
 
 h2 {
-	font-family: Philosopher, sans-serif;
-	color: #CA9C2C;
-	font-size: 1.5rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding-bottom: 20px;
+    font-family: Philosopher, sans-serif;
+    color: #CA9C2C;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .latin {
-	font-family: Philosopher, sans-serif;
-	color: #CA9C2C;
-	font-size: 1.5rem;
-	text-align: left;
-	padding-bottom: 2vw;
-	;
+    font-family: Philosopher, sans-serif;
+    color: #CA9C2C;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 2vw;
+    ;
 }
 
 h3 {
-	font-family: Philosopher, sans-serif;
-	color: white;
-	font-size: 1.4rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding-bottom: 20px;
+    font-family: Philosopher, sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 p {
-	font-family: Quattrocento, sans-serif;
-	color: white;
-	font-size: 1rem;
-	width: 100vw;
-	padding: 2.5vw;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+    font-family: Quattrocento, sans-serif;
+    color: white;
+    font-size: 1rem;
+    width: 100vw;
+    padding: 2.5vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .sol img {
-	max-width: 100vw;
-	height: auto;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	padding: 0;
+    max-width: 100vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .vand img {
-	max-width: 67vw;
-	height: auto;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	padding: 0;
+    max-width: 67vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 article h2 {}
@@ -152,134 +152,160 @@ article p {}
 /*    SLIDESHOW   */
 
 .billede_slideshow img {
-	object-fit: cover;
-	height: 50vh;
-	width: 100vw;
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
 }
 
 .skift_billede {
-	display: flex;
-	margin-top: 1vw;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    margin-top: 1vw;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .frem,
 .tilbage {
-	color: #567356;
-	font-weight: bold;
-	border: none;
-	cursor: pointer;
-	background-color: transparent;
-	font-size: 1.7rem;
+    color: #567356;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.7rem;
 }
 
 .frem {
-	right: 1vw;
+    right: 1vw;
 }
 
 .tilbage {
-	left: 1vw;
+    left: 1vw;
 }
 
 .dot {
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #85A69B;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #85A69B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .valgt_dot {
-	background-color: #4C6E72;
+    background-color: #4C6E72;
 }
+
+.tilbageknap {
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    font-family: Quattrocento, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #EAEBE6;
+    background-color: #567356;
+    border: none;
+    cursor: pointer;
+}
+
 
 @media (min-width: 600px) {
 
-	.billede_slideshow img {
-		display: flex;
-		margin: auto;
-		height: 60vh;
-		width: 70vw;
-	}
+    .billede_slideshow img {
+        display: flex;
+        margin: auto;
+        height: 60vh;
+        width: 70vw;
+    }
 
 }
 
 @media (min-width: 800px) {
 
-	.row {
-		display: flex;
-	}
+    .row {
+        display: flex;
+    }
 
-	.sol img {
-		max-width: 100%;
-		width: 20vw;
-		height: auto;
-		margin: 0;
-	}
+    .sol img {
+        max-width: 100%;
+        width: 20vw;
+        height: auto;
+        margin: 0;
+    }
 
-	.img1 {
-		width: 50vw;
-		height: auto;
-	}
+    .img1 {
+        width: 50vw;
+        height: auto;
+    }
 
-	.vand img {
-		max-width: 100%;
-		width: 19.5vw;
-		height: auto;
-		margin: 0;
-	}
+    .vand img {
+        max-width: 100%;
+        width: 19.5vw;
+        height: auto;
+        margin: 0;
+    }
 
-	p {
-		font-size: 1.3rem;
-		width: 80vw;
-		padding: 2.5vw;
-	}
+    p {
+        font-size: 1.3rem;
+        width: 80vw;
+        padding: 2.5vw;
+    }
 
-	.divider {
-		position: relative;
-		margin: 5vw 0 5vw 0;
-		height: 1px;
-	}
+    .divider {
+        position: relative;
+        margin: 5vw 0 5vw 0;
+        height: 1px;
+    }
 
-	.billede_slideshow img {
-		height: 55vh;
-		width: 30vw;
-	}
+    .billede_slideshow img {
+        height: 55vh;
+        width: 30vw;
+    }
+
+    article{
+    margin-top: 4vw;
+}
+    main {
+    padding-top: 5vw;
+}
+
 }
 
 
+
+
+
+
 @media (min-width: 1280px) {
-	.sol img {
-		max-width: 100%;
-		width: 20vw;
-		height: auto;
-	}
+    .sol img {
+        max-width: 100%;
+        width: 20vw;
+        height: auto;
+    }
 
-	.img1 {
-		width: 50vw;
-		height: auto;
-	}
+    .img1 {
+        width: 50vw;
+        height: auto;
+    }
 
-	.vand img {
-		max-width: 100%;
-		width: 19.5vw;
-		height: auto;
-	}
+    .vand img {
+        max-width: 100%;
+        width: 19.5vw;
+        height: auto;
+    }
 
-	p {
-		font-size: 1.3rem;
-		width: 80vw;
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
+    p {
+        font-size: 1.3rem;
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 
 
-	.billede_slideshow img {
-		height: 55vh;
-		width: 30vw;
-	}
+    .billede_slideshow img {
+        height: 55vh;
+        width: 30vw;
+    }
 
 }

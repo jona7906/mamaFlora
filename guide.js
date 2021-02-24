@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
 		function visBilleder() {
 			console.log("visBilleder");
 
-			document.querySelector(".ikon img").src = src = "https://plante-2af1.restdb.io/media/602e7152e1697e5a00016d03";
-			document.querySelector(".ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d04";
-			document.querySelector(".ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/602e7153e1697e5a00016d05";
+			document.querySelector(".ikon img").src = src = "https://plante-2af1.restdb.io/media/60362dd56afd463c000093c8";
+			document.querySelector(".ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/60362dd76afd463c000093c9";
+			document.querySelector(".ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/60362dd76afd463c000093ca";
 
-			document.querySelector(".vand_guide img").src = "https://plante-2af1.restdb.io/media/602e7155e1697e5a00016d09";
-			document.querySelector(".vand_guide .ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/602e7155e1697e5a00016d0a";
-			document.querySelector(".vand_guide .ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/602e7156e1697e5a00016d0b";
+			document.querySelector(".vand_guide img").src = "https://plante-2af1.restdb.io/media/60362ec76afd463c000093ee";
+			document.querySelector(".vand_guide .ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/60362dd96afd463c000093ce";
+			document.querySelector(".vand_guide .ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/60362dd96afd463c000093cf";
 		}
 	})

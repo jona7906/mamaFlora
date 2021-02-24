@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
 			document.querySelector(".img1").src = imgURL + plante.pic;
 			document.querySelector(".img2").src = imgURL + plante.pic_hover;
 			document.querySelector(".img3").src = imgURL + plante.pic_home;
+
+			document.querySelector(".koebknap").href = plante.koebslink;
 			document.querySelector(".tilbageknap").addEventListener("click", tilbageTilMenu);
 		}
 

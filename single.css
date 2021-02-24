@@ -40,7 +40,6 @@ main {
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .divider {
@@ -231,7 +230,7 @@ a h2:hover{
 }
 
 #Egenskaber{
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
 }
 
 @media (min-width: 600px) {

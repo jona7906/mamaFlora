@@ -66,7 +66,7 @@ header {
 .active a {
 	text-align: center;
 	position: relative;
-	color: #ffffff;
+	color: #EAEBE6;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 19px;
@@ -121,21 +121,21 @@ header {
 }
 
 nav div:first-of-type {
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #EAEBE6;
 	display: block;
 	width: 80%;
 	margin: 0 auto;
 }
 
 nav div:nth-of-type(2) {
-	border-top: 2px solid white;
+	border-top: 2px solid #EAEBE6;
 	display: block;
 	width: 80%;
 	margin: 0 auto;
 }
 
 nav div:nth-of-type(3) {
-	border-top: 2px solid white;
+	border-top: 2px solid #EAEBE6;
 	display: block;
 	width: 80%;
 	margin: 0 auto;
@@ -225,14 +225,14 @@ p {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 2vw;
+	padding: 0.7vw;
 }
 
 
 #forside_planter div {
 	width: 100%;
-	height: 35vw;
-	background-color: #567356;
+	height: 25vw;
+	background-color: #9FB2AF;
 	margin: 0 auto;
 	overflow: hidden;
 
@@ -284,19 +284,30 @@ a:first-of-type {
 
 
 #forside_planter img {
-	opacity: 20%;
+	opacity: 10%;
 	max-width: 100%;
 }
 
 
 .splash_02 {
-	background-image: url(img/etbilled_02.jpg);
+	background-image: url(img/splash2.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 30vw;
 	margin: 0 auto;
 	margin-top: 30px;
 	background-position: center
+}
+
+.tekst_ou {
+	position: absolute;
+	font-family: Philosopher, sans-serif;
+	color: #CA9C2C;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 1vw;
+	margin-left: 50vw;
 }
 
 .splash_02 img {}
@@ -454,10 +465,13 @@ footer p {
 		0 0 0 4px white;
 }
 
+/*
+Hvad laver den her?
 .redtekst {
 	color: red;
 	background-color: aqua;
 }
+*/
 
 
 @media (min-width: 800px) {
@@ -483,7 +497,10 @@ footer p {
 		z-index: 95;
 	}
 
-
+	.tekst_ou {
+		font-size: 2.5rem;
+		padding-top: 5vw;
+	}
 
 	p {
 		width: 1100px;
@@ -640,15 +657,26 @@ footer p {
 	}
 
 	#forside_planter div:hover img {
-
 		opacity: 100%;
 		max-width: 100%;
+	}
+
+	#forside_planter div:hover h3 {
+		color: #404E44;
+		border: #404E44 solid 2px;
 	}
 
 	a:first-of-type {
 		grid-column: 1/2;
 		grid-row: 1/2;
 	}
+
+	.tekst_ou {
+		font-size: 5rem;
+		padding-top: 7vw;
+		margin-left: 45vw;
+	}
+
 
 	.plante_01 img {
 		margin-top: -20vw;

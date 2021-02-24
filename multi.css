@@ -103,7 +103,8 @@ li {
 }
 
 .filter button:active {
-	background-color: #9FB2AF;
+	color: #567356;
+	background-color: #C29D44;
 }
 
 #multi_planter {
@@ -277,7 +278,9 @@ footer {}
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
+
 	.filter button:hover {
-		background-color: #9FB2AF;
+		color: #567356;
+		background-color: #C29D44;
 	}
 }

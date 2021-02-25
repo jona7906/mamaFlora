@@ -272,7 +272,7 @@ a:first-of-type {
     color: #EAEBE6;
     z-index: 95;
     position: relative;
-    margin-top: 12vw;
+    margin-top: 5.5vw;
 
     /*placere teksten oven på billedet*/
 }
@@ -294,7 +294,7 @@ a:first-of-type {
     background-size: cover;
     max-width: 100%;
     height: 30vw;
-    margin: 30px 20px 30px 20px;
+    margin: 20px 10px 20px 10px;
     background-position: center
 }
 
@@ -464,7 +464,7 @@ footer p {
         0 0 0 4px white;
 }
 
-.selected{
+.selected {
     background-color: #3d573d;
 }
 
@@ -476,8 +476,18 @@ Hvad laver den her?
 }
 */
 
-.mission{
+.mission {
     padding: 0 6vw 10vw 6vw;
+}
+
+@media (min-width: 600px) {
+
+
+    .tekst_ou {
+        font-size: 2.6rem;
+        padding-top: 5vw;
+        margin-left: 50vw;
+    }
 }
 
 @media (min-width: 800px) {
@@ -503,9 +513,14 @@ Hvad laver den her?
         z-index: 95;
     }
 
+    .splash_02 {
+        margin: 30px 20px 10px 20px;
+    }
+
     .tekst_ou {
         font-size: 2.5rem;
-        padding-top: 5vw;
+        padding-top: 8vw;
+        margin-left: 60vw;
     }
 
     p {
@@ -636,9 +651,9 @@ Hvad laver den her?
         margin-top: 1vw;
     }
 
-    .mission{
-    padding: 0 6vw 0vw 6vw;
-}
+    .mission {
+        padding: 0 6vw 0vw 6vw;
+    }
 
 
 }

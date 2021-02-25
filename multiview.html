@@ -23,19 +23,19 @@
 
 
     <header>
-		<div class="topnav">
-			<a href="index.html" class="logo_navn_menu"><img class="logo_menu" src="img/hvid_2.svg" alt="logo"></a>
-			<p class="mamaflora_menu">MamaFlora</p>
-			<nav id="myLinks" class="active">
-				<!-- Navigation links (hidden by default) -->
-				<a href="index.html">Forside</a>
-				<div></div>
-				<a href="multiview.html" class="selected">Planter</a>
-				<div></div>
-				<a href="guide.html">Guide</a>
-				<div></div>
-				<a href="om.html">Om os</a>
-			</nav>
+        <div class="topnav">
+            <a href="index.html" class="logo_navn_menu"><img class="logo_menu" src="img/hvid_2.svg" alt="logo"></a>
+            <p class="mamaflora_menu">MamaFlora</p>
+            <nav id="myLinks" class="active">
+                <!-- Navigation links (hidden by default) -->
+                <a href="index.html">Forside</a>
+                <div></div>
+                <a href="multiview.html" class="selected">Planter</a>
+                <div></div>
+                <a href="guide.html">Guide</a>
+                <div></div>
+                <a href="om.html">Om os</a>
+            </nav>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a class="icon">
                 <div id="burgercontainer">
@@ -59,7 +59,8 @@
             <button data-kategori="spiselig" class="sorter">Spiselig</button>
             <button data-kategori="blomster" class="sorter">Blomstrende</button>
             <button data-kategori="luftrensende" class="sorter">Luftrensende</button>
-            <button data-kategori="form" class="sorter">Hængende</button><button data-kategori="grad" class="sorter">Nem</button>
+            <button data-kategori="form" class="sorter">Hængende</button>
+            <button data-kategori="grad" class="sorter">Nem</button>
 
             <!--Dropdown filter knapper-->
             <div class="vand_filter dropdown">
@@ -86,9 +87,12 @@
         <section id="multi_planter">
         </section>
 
+        <!--       Opretter template skabelon til at hente data ned i -->
         <template>
             <article>
-                <div class="article_billede"><img class="" src="" alt=""></div>
+                <div class="article_billede">
+                    <img class="" src="" alt="">
+                </div>
                 <div class="knap_og_navn">
                     <h3 class=""></h3>
                     <button class="b">Se detaljer</button>

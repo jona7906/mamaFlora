@@ -35,35 +35,33 @@
                overskriften.textContent = this.textContent;
            }
 
-           function vis(json) {
-               console.log(json);
-               const template = document.querySelector("template");
-               planteSection.textContent = "";
-               json.forEach(planter => {
-                   const klon = template.cloneNode(true).content;
-
-                   klon.querySelector("article h3").textContent = planter.navn;
+           function vis(json) { // funktion "vis" med data fra databasen
+               console.log(json); // Tjekker om funktionen bliver vist
+               const template = document.querySelector("template"); // Opretter en variable til templaten
 
 
+               json.forEach(planter => { // Looper igennem databasen
+                   const klon = template.cloneNode(true).content; // Gør det muligt at klone ned i template
 
-                   /*planteSection.innerHTML = "";*/
-                   klon.querySelector("img").addEventListener("mouseover", skiftBilled);
+                   klon.querySelector("article h3").textContent = planter.navn; // overskriften hentes fra databasen
 
-                   function skiftBilled() {
-                       console.log("hover på billedet " + this.outerHTML);
+                   klon.querySelector("article img").src = imgURL + planter.pic[0]; // billedet hentes fra databasen
 
-                       this.src = imgURL + planter.pic_hover;
+                   klon.querySelector("img").addEventListener("mouseover", skiftBilled); // Laver en eventlistener som kører funktion "skiftBilled" når musen holdes over img
 
+                   function skiftBilled() { // Funktionen "skiftBilled"
+                       console.log("hover på billedet " + this.outerHTML); // Tjekker om funktionen køres på "this" (den gældende i "planter")
 
+                       this.src = imgURL + planter.pic_hover; //Det gældende img får skiftet billedet ud med "pic_hover" fra databasen
 
                    }
 
-                   klon.querySelector("img").addEventListener("mouseout", skiftTilbage);
+                   klon.querySelector("img").addEventListener("mouseout", skiftTilbage); // Laver en eventlistener som kører funktion "skiftTilbage" når musen fjernes fra img
 
                    function skiftTilbage() {
-                       console.log("hover på billedet " + this.outerHTML);
+                       console.log("hover på billedet " + this.outerHTML); // Tjekker om funktionen køres på "this" (den gældende i "planter")
 
-                       this.src = imgURL + planter.pic;
+                       this.src = imgURL + planter.pic; //Det gældende img får skiftet billedet ud med "pic" fra databasen
                    }
 
                    klon.querySelector("article button").addEventListener("click", () => {
@@ -74,7 +72,6 @@
                        visPlante(planter);
                    })
 
-                   klon.querySelector("article img").src = imgURL + planter.pic[0];
 
                    // alle filter
 

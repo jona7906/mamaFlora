@@ -89,14 +89,15 @@ function visSlides(n) {
 
         slideNummer = slides.length // Sæt slideNummer = 3 dvs vis billede 3
     }
+    // i står for index - loop variablen
     // For = loop igennem kode et antal gange
-    for (i = 0; i < slides.length; i++) { // Sætter først i = 0. Derefter, hvis i(0) < 2(slide.length) så plus én til i.
-        slides[i].style.display = "none"; // variable "slides" får tallet 1 og sætter display til none
+    for (i = 0; i < slides.length; i++) { // Sætter først i = 0; derefter kører koden 3 gange(antal slides); +1 til i hver gang den har kørt
+        slides[i].style.display = "none"; // Slides 0, 1, 2 i arrayet får display: none således at billedet ikke bliver vist
     }
-    for (i = 0; i < dots.length; i++) { // Sætter først i = 0. Derefter, hvis i(0) < 2 (dot.length) så plus én til i.
-        dots[i].className = dots[i].className.replace(" valgt_dot", ""); // variable "dot" får tallet 1 og erstatter classname "valgt_dot" med ingenting
+    for (i = 0; i < dots.length; i++) { // Sætter først i = 0; derefter kører koden 3 gange(antal slides); +1 til i hver gang
+        dots[i].className = dots[i].className.replace(" valgt_dot", ""); // doot 0, 1, 2 i arrayet får erstattet klassen " valgt_dot" med ingenting, således at den ikke har styling på
     }
 
-    slides[slideNummer - 1].style.display = "block"; // de billeder hvor i = 0 får display block, således at man ikke kan se billederne
-    dots[slideNummer - 1].className += " valgt_dot"; // Den prik uden i = 0 får tilføjet klassen "valgt_dot"
+    slides[slideNummer - 1].style.display = "block"; // aktuel slide får display: block så billedet bliver vist
+    dots[slideNummer - 1].className += " valgt_dot"; // aktuel dot fåår tildelt klassen " valgt_dot" så den er stylet anderledes end de andre
 }

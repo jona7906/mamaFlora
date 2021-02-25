@@ -150,7 +150,7 @@ article button {}
 .b {
 	float: right;
 	background-color: #567356;
-	padding: 13px;
+	padding: 10px;
 	color: #EAEBE6;
 	border: none;
 	font-family: Quattrocento, sans-serif;
@@ -161,10 +161,11 @@ article button {}
 	max-height: 40px;
 	position: relative;
 	bottom: 7vw;
+    font-weight: bold;
 }
 
 .b:hover {
-	color: #567356;
+	color: #ffffff;
 	background-color: #C29D44;
 }
 

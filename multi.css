@@ -95,7 +95,7 @@ main {
     font-weight: bold;
     color: #EAEBE6;
     background-color: #567356;
-    border: none;
+    border: 0.5px solid rgb(234, 235, 230, 0.5);
 }
 
 li {
@@ -154,7 +154,6 @@ article button {}
     background-color: #567356;
     padding: 10px;
     color: #EAEBE6;
-    border: none;
     font-family: Quattrocento, sans-serif;
     font-size: 0.9rem;
     border-radius: 25px;
@@ -164,6 +163,7 @@ article button {}
     position: relative;
     bottom: 7vw;
     font-weight: bold;
+    border: 0.5px solid rgb(234, 235, 230, 0.5);
 }
 
 .b:hover {

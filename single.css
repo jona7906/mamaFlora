@@ -18,7 +18,8 @@ body {
 
 .column {
     flex: 33.33%;
-    padding: 5px;
+
+    padding-left: 3vw;
 }
 
 .img1 {}
@@ -184,6 +185,12 @@ article p {}
     left: 1vw;
 }
 
+.frem:hover,
+.tilbage:hover {
+    background-color: transparent;
+    color: #CA9C2C;
+}
+
 .dot {
     height: 15px;
     width: 15px;
@@ -212,7 +219,7 @@ article p {}
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    border: 0.5px solid rgb(234, 235, 230, 0.5);
 }
 
 a {
@@ -246,6 +253,7 @@ a h2:hover {
 
 .koebknap h2 {
     margin-bottom: 8vw;
+    border: 0.5px solid rgb(234, 235, 230, 0.5);
 }
 
 @media (min-width: 600px) {
@@ -325,12 +333,10 @@ a h2:hover {
     }
 
     button:hover {
-        color: #567356;
         background-color: #C29D44;
     }
 
     .koebknap h2:hover {
-        color: #567356;
         background-color: #C29D44;
     }
 

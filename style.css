@@ -667,6 +667,7 @@ Hvad laver den her?
     #forside_planter div:hover h3 {
         color: #404E44;
         border: #404E44 solid 2px;
+        background-color: #EAEBE6;
     }
 
     a:first-of-type {
@@ -698,7 +699,7 @@ Hvad laver den her?
     }
 
     .plante_03 img {
-        margin-top: -35vw;
+        margin-top: -34vw;
         width: 100vw;
         height: 800px;
     }

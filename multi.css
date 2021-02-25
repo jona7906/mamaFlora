@@ -35,7 +35,7 @@ h1 {
 h2 {
     font-family: Philosopher, sans-serif;
     color: #EAEBE6;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -44,7 +44,7 @@ h2 {
 
 h3 {
     font-family: Philosopher, sans-serif;
-    color: white;
+    color: #EAEBE6;
     font-size: 1.4rem;
     margin-left: 1.5vw;
     margin-right: auto;
@@ -167,7 +167,7 @@ article button {}
 }
 
 .b:hover {
-    color: #ffffff;
+    color: #EAEBE6;
     background-color: #C29D44;
 }
 
@@ -284,7 +284,7 @@ footer {}
 
 
     .filter button:hover {
-        color: #567356;
+        color: #EAEBE6;
         background-color: #C29D44;
     }
 

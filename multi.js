@@ -18,19 +18,19 @@
            hentData();
 
            let planteSection = document.querySelector("#multi_planter");
-           let filter = "navn";
-           const filterknapper = document.querySelectorAll(".filter .sorter");
-           const overskriften = document.querySelector(".overskrift_filter");
+           let filter = "navn"; // opretter variablen "filter" og sætter den = navn, således at det er den data-kategori den er lig med.
+           const filterknapper = document.querySelectorAll(".filter .sorter"); // opretter variablen oog henvender sig til alle de knapper der skal kunne filtreres på i DOM'en
+           const overskriften = document.querySelector(".overskrift_filter"); // Opretter varibalen "overskriften" så overskriften kan ændre sig ud fra sortering
 
-           filterknapper.forEach(knap => knap.addEventListener("click", sorter))
+           filterknapper.forEach(knap => knap.addEventListener("click", sorter)) // eventlistener på alle filterknapperne - hvis der trykkes skal den køre funktionen "sorter"
 
 
-           function sorter() {
-               console.log("sortering");
-               filter = this.dataset.kategori;
-               document.querySelector(".valgt").classList.remove("valgt");
-               this.classList.add("valgt");
-               hentData();
+           function sorter() { // funktionen "sorter"
+               console.log("sortering"); // Tjekker om funktionen bliver kaldt
+               filter = this.dataset.kategori; // filter variablen sættes lig med den dataset knap som der blev trykket på
+               document.querySelector(".valgt").classList.remove("valgt"); // Knappen med klassen "valgt" får den klasse fjernet
+               this.classList.add("valgt"); // den nye knap får klassen "valgt"
+               hentData(); // Henter data - funktionen vis bliver derunder kørt, og den nye data bliver vist
 
                overskriften.textContent = this.textContent;
            }

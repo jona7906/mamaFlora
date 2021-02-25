@@ -70,6 +70,10 @@
                        visPlante(planter);
                    })
 
+                   klon.querySelector(".article_billede").addEventListener("click", () => {
+                       visPlante(planter);
+                   })
+
                    klon.querySelector("article img").src = imgURL + planter.pic[0];
 
                    // alle filter

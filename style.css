@@ -690,7 +690,7 @@ Hvad laver den her?
 	#forside_planter div:hover h3 {
 		color: #404E44;
 		border: #404E44 solid 2px;
-		background-color: #EAEBE6;
+		background-color: white;
 	}
 
 	a:first-of-type {
@@ -703,11 +703,12 @@ Hvad laver den her?
 		padding-top: 7vw;
 		margin-left: 45vw;
 		/*        Ny styling for den store skærm*/
-		position: absolute;
+		position: relative;
 		margin: 0;
 		padding: 0;
-		top: 190vh;
-		right: 10vw;
+		left: 28vw;
+		top: 13vh;
+		max-width: 60vw;
 	}
 
 

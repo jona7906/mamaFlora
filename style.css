@@ -721,6 +721,12 @@ footer p {
 	}
 
 
-
-
 }
+
+@media (min-width: 2400px) {
+
+	.tekst_ou {
+
+		left: 17vw;
+
+	}

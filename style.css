@@ -476,6 +476,9 @@ Hvad laver den her?
 }
 */
 
+.mission{
+    padding: 0 6vw 0 6vw;
+}
 
 @media (min-width: 800px) {
 

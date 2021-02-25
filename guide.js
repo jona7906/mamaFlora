@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => //tjekker inden om DOM er lo
 
 		function visBilleder() {
 			console.log("visBilleder");
-
+			//Trækker det udvalgte billede ud fra en url.
 			document.querySelector(".ikon img").src = src = "https://plante-2af1.restdb.io/media/60362dd56afd463c000093c8";
 			document.querySelector(".ikon:nth-of-type(2n) img").src = "https://plante-2af1.restdb.io/media/60362dd76afd463c000093c9";
 			document.querySelector(".ikon:nth-of-type(3n) img").src = "https://plante-2af1.restdb.io/media/60362dd76afd463c000093ca";

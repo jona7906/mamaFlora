@@ -96,6 +96,8 @@ header {
 	padding-right: 3vw;
 }
 
+
+/*burgermenuen er lavet af 3 barer*/
 .bar1,
 .bar2,
 .bar3 {
@@ -265,7 +267,6 @@ a:first-of-type {
 	color: #EAEBE6;
 	margin: 0 auto;
 	text-align: center;
-	/*position: relative;*/
 	width: 36vw;
 	font-size: 4vw;
 	border: #EAEBE6 2px solid;
@@ -300,6 +301,7 @@ a:first-of-type {
 	background-position: center
 }
 
+/*Teksten midt på splash2*/
 .tekst_ou {
 	position: absolute;
 	font-family: Philosopher, sans-serif;
@@ -310,10 +312,6 @@ a:first-of-type {
 	padding-top: 1vw;
 	margin-left: 50vw;
 }
-
-.splash_02 img {}
-
-#galleri_insp {}
 
 .inspiration_tekst {
 	margin-top: 5vw;
@@ -433,6 +431,7 @@ footer p {
 	padding-top: 55px;
 }
 
+/* Adskilleren af teksten */
 #om_os_info .divider {
 	position: relative;
 	margin-top: 30px;
@@ -470,13 +469,6 @@ footer p {
 	background-color: #3d573d;
 }
 
-/*
-Hvad laver den her?
-.redtekst {
-	color: red;
-	background-color: aqua;
-}
-*/
 
 .mission {
 	padding: 0 6vw 10vw 6vw;
@@ -511,7 +503,6 @@ Hvad laver den her?
 		width: 30vw;
 		font-size: 3vw;
 		margin-top: 15vw;
-		/*margin-top: 12vw;*/
 		z-index: 95;
 	}
 
@@ -572,7 +563,7 @@ Hvad laver den her?
 		color: #CA9C2C;
 	}
 
-	/*    OM OS SIDE */
+	/*  OM OS SIDE */
 
 	#om_os_section {
 		padding-top: 55px;
@@ -660,6 +651,8 @@ Hvad laver den her?
 
 }
 
+/*Desktop version*/
+
 @media (min-width: 1280px) {
 	#forside_planter {
 		grid-gap: 20px;
@@ -702,11 +695,10 @@ Hvad laver den her?
 		font-size: 5rem;
 		padding-top: 7vw;
 		margin-left: 45vw;
-		/*        Ny styling for den store skærm*/
 		position: relative;
 		margin: 0;
 		padding: 0;
-		left: 18vw;
+		left: 25vw;
 		top: 13vh;
 		max-width: 60vw;
 	}

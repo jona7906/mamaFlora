@@ -225,7 +225,8 @@ footer {}
 
 	main {
 		padding-top: 30px;
-		margin: 0 auto;
+	margin-left: 20px;
+	margin-right: 20px;
 
 	}
 
@@ -283,5 +284,10 @@ footer {}
 	.filter button:hover {
 		color: #567356;
 		background-color: #C29D44;
+	}
+
+    main {
+	margin: 0 auto;
+
 	}
 }

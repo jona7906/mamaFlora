@@ -477,7 +477,7 @@ Hvad laver den her?
 */
 
 .mission{
-    padding: 0 6vw 0 6vw;
+    padding: 0 6vw 10vw 6vw;
 }
 
 @media (min-width: 800px) {
@@ -558,13 +558,12 @@ Hvad laver den her?
     /*    OM OS SIDE */
 
     #om_os_section {
-        padding: 5vw;
         padding-top: 55px;
         align-items: center;
     }
 
     #om_os_section img {
-        width: 20vw;
+        width: 18vw;
     }
 
     #om_os_section p {
@@ -636,6 +635,10 @@ Hvad laver den her?
         height: 19vw;
         margin-top: 1vw;
     }
+
+    .mission{
+    padding: 0 6vw 0vw 6vw;
+}
 
 
 }

@@ -30,6 +30,7 @@
                filter = this.dataset.kategori; // filter variablen sættes lig med den dataset knap som der blev trykket på
                document.querySelector(".valgt").classList.remove("valgt"); // Knappen med klassen "valgt" får den klasse fjernet
                this.classList.add("valgt"); // den nye knap får klassen "valgt"
+
                hentData(); // Henter data - funktionen vis bliver derunder kørt, og den nye data bliver vist
 
                overskriften.textContent = this.textContent;
@@ -38,7 +39,7 @@
            function vis(json) { // funktion "vis" med data fra databasen
                console.log(json); // Tjekker om funktionen bliver vist
                const template = document.querySelector("template"); // Opretter en variable til templaten
-
+               planteSection.textContent = "";
 
                json.forEach(planter => { // Looper igennem databasen
                    const klon = template.cloneNode(true).content; // Gør det muligt at klone ned i template
